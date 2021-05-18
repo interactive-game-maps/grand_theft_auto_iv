@@ -11,6 +11,8 @@ html, body, #map {
 .sidebar-content ul {
     list-style: none;
     padding: 0%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
 }
 
 .sidebar-content li {
@@ -22,6 +24,10 @@ html, body, #map {
     margin-right: 5%;
 }
 
-li:nth-child(even) {
-    background-color: #eee;
+.sidebar-content li label {
+    display: block;
+}
+
+.sidebar-content li:nth-child(even) {
+    background-color: dimgray;
 }

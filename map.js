@@ -81,9 +81,7 @@ var map = L.map('map', {
     });
 
     // Add lists to sidebar
-    // document.getElementById("pigeons").appendChild(document.createElement('h3')).innerText = 'Flying Rats';
     var pigeons_list = document.getElementById("pigeons").appendChild(document.createElement('ul'));
-    // document.getElementById("side").appendChild(document.createElement('h3')).innerText = 'Stunt Jumps';
     var stunt_jumps_list = document.getElementById("stunt_jumps").appendChild(document.createElement('ul'));
 
     // Add all markers and attach popups with information
