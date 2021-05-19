@@ -113,24 +113,6 @@
         }
     }).addTo(under_bridges_group);
 
-    L.geoJSON(seagulls_tlad, {
-        pointToLayer: function (feature, latlng) {
-            // custom marker
-            var marker = L.marker(latlng, {
-                // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
-                icon: L.ExtraMarkers.icon({
-                    icon: 'fa-number',
-                    number: feature.properties.id,
-                    shape: 'square',
-                    markerColor: 'yellow'
-                })
-            });
-
-            add_checkbox_for_marker(feature, marker, seagulls_tlad_list, seagulls_tlad_cluster);
-            return marker;
-        }
-    }).addTo(seagulls_tlad_cluster);
-
     L.geoJSON(seagulls_bogt, {
         pointToLayer: function (feature, latlng) {
             // custom marker
@@ -148,6 +130,24 @@
             return marker;
         }
     }).addTo(seagulls_bogt_cluster);
+
+    L.geoJSON(seagulls_tlad, {
+        pointToLayer: function (feature, latlng) {
+            // custom marker
+            var marker = L.marker(latlng, {
+                // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
+                icon: L.ExtraMarkers.icon({
+                    icon: 'fa-number',
+                    number: feature.properties.id,
+                    shape: 'square',
+                    markerColor: 'yellow'
+                })
+            });
+
+            add_checkbox_for_marker(feature, marker, seagulls_tlad_list, seagulls_tlad_cluster);
+            return marker;
+        }
+    }).addTo(seagulls_tlad_cluster);
 
     var overlayMaps = {
         "Flying Rats": pigeons_cluster,
