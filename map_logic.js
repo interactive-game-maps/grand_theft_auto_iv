@@ -1,47 +1,3 @@
-var map = L.map('map', {
-    crs: L.CRS.Simple,
-    // minZoom: 0,
-    maxZoom: 10,
-    zoom: 3
-});
-
-{ // Defining base maps
-    // Use tiled maps if possible, allows better zooming
-    // Make sure tiling scheme is growing downwards!
-    // https://github.com/Leaflet/Leaflet/issues/4333#issuecomment-199753161
-    // https://github.com/commenthol/gdal2tiles-leaflet
-    // ./gdal2tiles.py -l -p raster -w none -z 2-5 full_map.jpg map_tiles
-    var tiled_map = new L.tileLayer('map_tiles/{z}/{x}/{y}.png', {
-        minNativeZoom: 2,
-        maxNativeZoom: 5,
-        attribution: '<a href="https://www.gtavision.com/index.php?section=content&site=116">Map from GTAvision.com</a>, <a href="https://www.gta4.net/100-percent-completion-checklist/">Images from GTA4.net</a>',
-        noWrap: true,
-        detectRetina: true
-    });
-
-    var tiled_vector = new L.tileLayer('vector_tiles/{z}/{x}/{y}.png', {
-        minNativeZoom: 2,
-        maxNativeZoom: 5,
-        attribution: '<a href="https://www.mapsland.com/maps/games/large-detailed-map-of-liberty-city-gta-4.jpg">Map from Mapsland</a>, <a href="https://www.gta4.net/100-percent-completion-checklist/">Images from GTA4.net</a>',
-        noWrap: true,
-        detectRetina: true
-    });
-
-    // Map as single image
-    // var tile_size = [250, 219]; // Size of the tiled image in folder "0", should be <= 256, makes that marker appear at the same spot
-    // var image_map = L.imageOverlay("full_map.jpg", [[0, 0], [-tile_size[1], tile_size[0]]]);
-    // map.fitBounds(image_map.getBounds());
-
-    var baseMaps = {
-        "Ingame map": tiled_map,
-        "Vector map": tiled_vector
-        // "Image Map": image_map
-    };
-
-    // Make one base layer visible by default
-    tiled_map.addTo(map);
-}
-
 { // Helper functions
     function add_checkbox_for_marker(feature, marker, list, cluster) {
         // Add checkbox for marker
@@ -49,7 +5,7 @@ var map = L.map('map', {
         var checkbox = document.createElement('input');
         checkbox.type = "checkbox";
         var label = document.createElement('label')
-        label.appendChild(document.createTextNode(feature.properties.number));
+        label.appendChild(document.createTextNode(feature.properties.id));
         label.onclick = () => {
             // center marker
             map.setView(marker.getLatLng());
@@ -79,10 +35,20 @@ var map = L.map('map', {
     var stunt_jump_cluster = L.markerClusterGroup({
         maxClusterRadius: 40
     });
+    var under_bridges_group = L.layerGroup();
+    var seagulls_tlad_cluster = L.markerClusterGroup({
+        maxClusterRadius: 40
+    });
+    var seagulls_bogt_cluster = L.markerClusterGroup({
+        maxClusterRadius: 40
+    });
 
     // Add lists to sidebar
     var pigeons_list = document.getElementById("pigeons").appendChild(document.createElement('ul'));
     var stunt_jumps_list = document.getElementById("stunt_jumps").appendChild(document.createElement('ul'));
+    var under_bridges_list = document.getElementById("under_bridges").appendChild(document.createElement('ul'));
+    var seagulls_tlad_list = document.getElementById("seagulls_tlad").appendChild(document.createElement('ul'));
+    var seagulls_bogt_list = document.getElementById("seagulls_bogt").appendChild(document.createElement('ul'));
 
     // Add all markers and attach popups with information
     L.geoJSON(pigeons, {
@@ -92,7 +58,7 @@ var map = L.map('map', {
                 // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
                 icon: L.ExtraMarkers.icon({
                     icon: 'fa-number',
-                    number: feature.properties.number,
+                    number: feature.properties.id,
                     shape: 'square',
                     markerColor: 'cyan'
                 })
@@ -103,7 +69,7 @@ var map = L.map('map', {
         },
         onEachFeature: function (feature, layer) {
             // popup with simple image and description
-            layer.bindPopup("<a href='https://media.gtanet.com/gta4/images/flying-rats/" + feature.properties.id + ".jpg'><img src='https://media.gtanet.com/gta4/images/flying-rats/" + feature.properties.id + ".jpg' width='500/' /></a>" + feature.properties.description, { maxWidth: 500 });
+            layer.bindPopup("<a href='https://media.gtanet.com/gta4/images/flying-rats/" + feature.properties.number + ".jpg'><img src='https://media.gtanet.com/gta4/images/flying-rats/" + feature.properties.number + ".jpg' width='500/' /></a>" + feature.properties.description, { maxWidth: 500 });
         }
     }).addTo(pigeons_cluster);
 
@@ -114,14 +80,13 @@ var map = L.map('map', {
                 // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
                 icon: L.ExtraMarkers.icon({
                     icon: 'fa-number',
-                    number: feature.properties.number,
+                    number: feature.properties.id,
                     shape: 'square',
                     markerColor: 'red'
                 })
             });
 
             add_checkbox_for_marker(feature, marker, stunt_jumps_list, stunt_jump_cluster);
-
             return marker;
         },
         onEachFeature: function (feature, layer) {
@@ -130,14 +95,72 @@ var map = L.map('map', {
         }
     }).addTo(stunt_jump_cluster);
 
+    L.geoJSON(under_bridges, {
+        pointToLayer: function (feature, latlng) {
+            // custom marker
+            var marker = L.marker(latlng, {
+                // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
+                icon: L.ExtraMarkers.icon({
+                    icon: 'fa-number',
+                    number: feature.properties.id,
+                    shape: 'square',
+                    markerColor: 'green'
+                })
+            });
+
+            add_checkbox_for_marker(feature, marker, under_bridges_list, under_bridges_group);
+            return marker;
+        }
+    }).addTo(under_bridges_group);
+
+    L.geoJSON(seagulls_tlad, {
+        pointToLayer: function (feature, latlng) {
+            // custom marker
+            var marker = L.marker(latlng, {
+                // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
+                icon: L.ExtraMarkers.icon({
+                    icon: 'fa-number',
+                    number: feature.properties.id,
+                    shape: 'square',
+                    markerColor: 'yellow'
+                })
+            });
+
+            add_checkbox_for_marker(feature, marker, seagulls_tlad_list, seagulls_tlad_cluster);
+            return marker;
+        }
+    }).addTo(seagulls_tlad_cluster);
+
+    L.geoJSON(seagulls_bogt, {
+        pointToLayer: function (feature, latlng) {
+            // custom marker
+            var marker = L.marker(latlng, {
+                // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
+                icon: L.ExtraMarkers.icon({
+                    icon: 'fa-number',
+                    number: feature.properties.id,
+                    shape: 'square',
+                    markerColor: 'orange'
+                })
+            });
+
+            add_checkbox_for_marker(feature, marker, seagulls_bogt_list, seagulls_bogt_cluster);
+            return marker;
+        }
+    }).addTo(seagulls_bogt_cluster);
+
     var overlayMaps = {
         "Flying Rats": pigeons_cluster,
-        "Stunt Jumps": stunt_jump_cluster
+        "Stunt Jumps": stunt_jump_cluster,
+        "Under Bridges": under_bridges_group,
+        "Seagulls - BoGT": seagulls_bogt_cluster,
+        "Seagulls - TLaD": seagulls_tlad_cluster
     };
 
     // Make overlay layer visible by default
     map.addLayer(pigeons_cluster);
     map.addLayer(stunt_jump_cluster);
+    map.addLayer(under_bridges_group);
 
     // Center view over map
     map.fitBounds(pigeons_cluster.getBounds());
@@ -145,17 +168,3 @@ var map = L.map('map', {
 
 // Add user selection to map
 L.control.layers(baseMaps, overlayMaps).addTo(map);
-
-// Add siedbar to map
-var sidebar = L.control.sidebar('sidebar').addTo(map);
-
-{ // Coordinate Finder, disable after getting all positions
-    // https://www.techtrail.net/creating-an-interactive-map-with-leaflet-js/
-    // var marker = L.marker([0, 0], {
-    // 	draggable: true,
-    // }).addTo(map);
-    // marker.bindPopup('LatLng Marker').openPopup();
-    // marker.on('dragend', function (e) {
-    // 	marker.getPopup().setContent('<span style="white-space: pre">' + JSON.stringify(marker.toGeoJSON(), null, 4) + '</span>').openOn(map);
-    // });
-}
