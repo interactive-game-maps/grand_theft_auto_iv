@@ -31,3 +31,7 @@ html, body, #map {
 .sidebar-content li:nth-child(even) {
     background-color: dimgray;
 }
+
+.leaflet-container {
+    background: #5d7c8e;
+}

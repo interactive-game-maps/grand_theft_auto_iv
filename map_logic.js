@@ -1,5 +1,5 @@
 { // Helper functions
-    function add_checkbox_for_marker(feature, marker, list, cluster) {
+    function add_checkbox_for_marker(feature, marker, list, list_name, cluster) {
         // Add checkbox for marker
         var list_entry = document.createElement('li');
         var checkbox = document.createElement('input');
@@ -18,11 +18,23 @@
 
         checkbox.addEventListener('change', () => {
             if (checkbox.checked) {
-                map.removeLayer(marker);
+                cluster.removeLayer(marker);
+                // save to localStorage
+                localStorage.setItem(list_name + ":" + feature.properties.id, true);
             } else {
-                marker.addTo(cluster).addTo(map);
+                marker.addTo(cluster);
+                // remove from localStorage
+                localStorage.removeItem(list_name + ":" + feature.properties.id);
             }
         });
+
+        // hide if checked previously
+        if (localStorage.getItem(list_name + ":" + feature.properties.id)) {
+            checkbox.checked = true;
+            return false;
+        }
+
+        return true;
     }
 
 }
@@ -64,7 +76,9 @@
                 })
             });
 
-            add_checkbox_for_marker(feature, marker, pigeons_list, pigeons_cluster);
+            if (!add_checkbox_for_marker(feature, marker, pigeons_list, "pigeons", pigeons_cluster)) {
+                return null;
+            }
             return marker;
         },
         onEachFeature: function (feature, layer) {
@@ -86,7 +100,9 @@
                 })
             });
 
-            add_checkbox_for_marker(feature, marker, stunt_jumps_list, stunt_jump_cluster);
+            if (!add_checkbox_for_marker(feature, marker, stunt_jumps_list, "stunt_jumps", stunt_jump_cluster)) {
+                return null;
+            }
             return marker;
         },
         onEachFeature: function (feature, layer) {
@@ -105,10 +121,13 @@
                     number: feature.properties.id,
                     shape: 'square',
                     markerColor: 'green'
-                })
+                }),
+                interactive: false
             });
 
-            add_checkbox_for_marker(feature, marker, under_bridges_list, under_bridges_group);
+            if (!add_checkbox_for_marker(feature, marker, under_bridges_list, "under_bridges", under_bridges_group)) {
+                return null;
+            }
             return marker;
         }
     }).addTo(under_bridges_group);
@@ -123,10 +142,13 @@
                     number: feature.properties.id,
                     shape: 'square',
                     markerColor: 'orange'
-                })
+                }),
+                interactive: false
             });
 
-            add_checkbox_for_marker(feature, marker, seagulls_bogt_list, seagulls_bogt_cluster);
+            if (!add_checkbox_for_marker(feature, marker, seagulls_bogt_list, "seagulls_bogt", seagulls_bogt_cluster)) {
+                return null;
+            }
             return marker;
         }
     }).addTo(seagulls_bogt_cluster);
@@ -141,10 +163,13 @@
                     number: feature.properties.id,
                     shape: 'square',
                     markerColor: 'yellow'
-                })
+                }),
+                interactive: false
             });
 
-            add_checkbox_for_marker(feature, marker, seagulls_tlad_list, seagulls_tlad_cluster);
+            if (!add_checkbox_for_marker(feature, marker, seagulls_tlad_list, "seagulls_tlad", seagulls_tlad_cluster)) {
+                return null;
+            }
             return marker;
         }
     }).addTo(seagulls_tlad_cluster);
