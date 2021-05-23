@@ -12,12 +12,14 @@
         label.htmlFor = checkbox.id;
 
         var icon = document.createElement('i');
-        icon.className = 'fas fa-crosshairs';
+        icon.className = 'fas fa-crosshairs fa-xs';
 
         var locate_button = document.createElement('button');
         locate_button.innerHTML = icon.outerHTML;
         locate_button.addEventListener('click', () => {
             map.setView(marker.getLatLng());
+            // rewrite url for easy copy pasta
+            history.replaceState({}, "", "index.html?list=" + list_name + "&id=" + feature.properties.id);
         });
 
         list_entry.appendChild(checkbox);

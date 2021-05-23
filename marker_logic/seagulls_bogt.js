@@ -3,9 +3,12 @@ var seagulls_bogt_list = document.createElement('ul');
 seagulls_bogt_list.className = 'collectibles_list';
 
 // Create marker group
-var seagulls_bogt_cluster = L.markerClusterGroup({
+var seagulls_bogt_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
+
+// save all marker in a map so we can access them later
+var seagulls_bogt_map = new Map();
 
 L.geoJSON(seagulls_bogt, {
     pointToLayer: function (feature, latlng) {
@@ -21,12 +24,18 @@ L.geoJSON(seagulls_bogt, {
             interactive: false
         });
 
-        if (!add_checkbox_for_marker(feature, marker, seagulls_bogt_list, "seagulls_bogt", seagulls_bogt_cluster)) {
+        // Add collectibles to lists
+        seagulls_bogt_map.set(feature.properties.id.toString(), marker);
+        if (!add_checkbox_for_marker(feature, marker, seagulls_bogt_list, "seagulls_bogt", seagulls_bogt_group)) {
             return null;
         }
         return marker;
     }
-}).addTo(seagulls_bogt_cluster);
+}).addTo(seagulls_bogt_group);
+seagulls_bogt_map.set("group", seagulls_bogt_group);
+
+// save local list in global list of lists
+marker.set("seagulls_bogt", seagulls_bogt_map);
 
 // Add list to sidebar
 sidebar.addPanel({

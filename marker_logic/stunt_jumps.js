@@ -3,9 +3,12 @@ var stunt_jumps_list = document.createElement('ul');
 stunt_jumps_list.className = 'collectibles_list';
 
 // Create marker group
-var stunt_jump_cluster = L.markerClusterGroup({
+var stunt_jumps_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
+
+// save all marker in a map so we can access them later
+var stunt_jumps_map = new Map();
 
 L.geoJSON(stunt_jumps, {
     pointToLayer: function (feature, latlng) {
@@ -20,7 +23,9 @@ L.geoJSON(stunt_jumps, {
             })
         });
 
-        if (!add_checkbox_for_marker(feature, marker, stunt_jumps_list, "stunt_jumps", stunt_jump_cluster)) {
+        // Add collectibles to lists
+        stunt_jumps_map.set(feature.properties.id.toString(), marker);
+        if (!add_checkbox_for_marker(feature, marker, stunt_jumps_list, "stunt_jumps", stunt_jumps_group)) {
             return null;
         }
         return marker;
@@ -28,8 +33,17 @@ L.geoJSON(stunt_jumps, {
     onEachFeature: function (feature, layer) {
         // popup with simple image and description
         layer.bindPopup("<iframe width=\"500\" height=\"281\" src=\"https://www.youtube-nocookie.com/embed/" + feature.properties.video_id + "\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>" + feature.properties.description, { maxWidth: 500 });
+
+        // rewrite url for easy copy pasta
+        layer.on('popupopen', (event) => {
+            history.replaceState({}, "", "index.html?list=" + "stunt_jumps" + "&id=" + feature.properties.id);
+        });
     }
-}).addTo(stunt_jump_cluster);
+}).addTo(stunt_jumps_group);
+stunt_jumps_map.set("group", stunt_jumps_group);
+
+// save local list in global list of lists
+marker.set("stunt_jumps", stunt_jumps_map);
 
 // Add list to sidebar
 sidebar.addPanel({
