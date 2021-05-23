@@ -53,7 +53,7 @@ tiled_map.addTo(map);
         id: 'reset',
         tab: '<i class="fas fa-trash"></i>',
         position: 'bottom',
-        button: function (event) {
+        button: () => {
             localStorage.clear();
             location.reload();
         }
