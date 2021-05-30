@@ -34,7 +34,24 @@ if (urlParams.has('list')) {
         const id = urlParams.get('id');
         if (marker.has(list) && marker.get(list).has(id)) {
             // center and zoom id
-            map.fitBounds(L.latLngBounds([marker.get(list).get(id).getLatLng()]));
+            map.fitBounds(L.latLngBounds([marker.get(list).get(id)[0].getLatLng()]));
         }
     }
 }
+
+// hide all previously checked marker
+// iterate over all lists
+marker.forEach((v, k) => {
+    // iterate over all IDs
+    v.forEach((value, key) => {
+        if (key == "group") return;
+
+        // iterate over all features with that ID
+        value.forEach(item => {
+            // Remove if checked
+            if (localStorage.getItem(k + ":" + key)) {
+                v.get("group").removeLayer(item);
+            }
+        });
+    });
+});
