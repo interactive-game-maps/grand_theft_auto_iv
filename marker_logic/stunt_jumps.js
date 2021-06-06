@@ -16,21 +16,28 @@ var stunt_jumps_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
+var stunt_jumps_icon = L.Icon.Default.extend({
+    options: {
+        imagePath: './',
+        iconUrl: 'marker/stunt_jumps.png',
+        shadowUrl: 'marker/shadow.png'
+    }
+});
+
 L.geoJSON(stunt_jumps, {
     pointToLayer: (feature, latlng) => {
-        // custom marker
         return L.marker(latlng, {
-            // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
-            icon: L.ExtraMarkers.icon({
-                icon: 'fa-number',
-                number: feature.properties.id,
-                shape: 'square',
-                markerColor: 'red'
-            })
+            icon: new stunt_jumps_icon,
+            riseOnHover: true
         });
     },
     onEachFeature: (feature, layer) => {
-        onEachFeature(feature, layer, stunt_jumps_group, stunt_jumps_list, 'stunt_jumps', true);
+        onEachFeature(feature, layer, {
+            layer_group: stunt_jumps_group,
+            list: stunt_jumps_list,
+            list_name: "stunt_jumps",
+            create_checkbox: true
+        });
     }
 }).addTo(stunt_jumps_group);
 marker.get('stunt_jumps').set("group", stunt_jumps_group);

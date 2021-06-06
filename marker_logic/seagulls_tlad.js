@@ -16,22 +16,28 @@ var seagulls_tlad_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
+var seagulls_tlad_icon = L.Icon.Default.extend({
+    options: {
+        imagePath: './',
+        iconUrl: 'marker/seagulls_tlad.png',
+        shadowUrl: 'marker/shadow.png'
+    }
+});
+
 L.geoJSON(seagulls_tlad, {
     pointToLayer: (feature, latlng) => {
-        // custom marker
         return L.marker(latlng, {
-            // Simple symbols and text/numbers on markers: https://github.com/coryasilva/Leaflet.ExtraMarkers
-            icon: L.ExtraMarkers.icon({
-                icon: 'fa-number',
-                number: feature.properties.id,
-                shape: 'square',
-                markerColor: 'yellow'
-            }),
-            interactive: false
+            icon: new seagulls_tlad_icon,
+            riseOnHover: true
         });
     },
     onEachFeature: (feature, layer) => {
-        onEachFeature(feature, layer, seagulls_tlad_group, seagulls_tlad_list, 'seagulls_tlad', true);
+        onEachFeature(feature, layer, {
+            layer_group: seagulls_tlad_group,
+            list: seagulls_tlad_list,
+            list_name: "seagulls_tlad",
+            create_checkbox: true
+        });
     }
 }).addTo(seagulls_tlad_group);
 marker.get("seagulls_tlad").set("group", seagulls_tlad_group);

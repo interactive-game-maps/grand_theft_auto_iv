@@ -35,3 +35,27 @@ html, body, #map {
 .leaflet-container {
     background: #5d7c8e;
 }
+
+.is-fullwidth {
+    display: flex;
+    width: 100%;
+}
+
+.popup-checkbox {
+    border-width: 1px;
+    padding: calc(0.5em - 1px) 0;
+    white-space: nowrap;
+    justify-content: center;
+    text-align: center;
+    appearance: none;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: #b5b5b5;
+    cursor: pointer;
+}
+
+.popup-title {
+    text-align: center;
+}
