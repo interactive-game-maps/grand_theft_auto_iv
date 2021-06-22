@@ -1,16 +1,3 @@
-// Create list
-// var window_cleaning_platforms_list = document.createElement('ul');
-// window_cleaning_platforms_list.className = 'collectibles_list';
-
-// // Add list to sidebar
-// sidebar.addPanel({
-//     id: 'window_cleaning_platforms',
-//     tab: '🐦',
-//     title: 'Window Cleaning Platforms',
-//     pane: '<p></p>' // placeholder to get a proper pane
-// });
-// document.getElementById('window_cleaning_platforms').appendChild(window_cleaning_platforms_list);
-
 // Create marker group
 var window_cleaning_platforms_group = L.markerClusterGroup({
     maxClusterRadius: 40

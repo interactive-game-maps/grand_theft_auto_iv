@@ -65,6 +65,9 @@ function onEachFeature(feature, layer, args = {}) {
                     case 'car_thefts':
                         prefix = 'https://media.gtanet.com/gta4/images/car-thefts/';
                         break;
+                    case 'strangers':
+                        prefix = 'http://media.gtanet.com/gta4/images/random-characters/';
+                        break;
                     case 'window_cleaning_platforms':
                         prefix = 'https://media.gtanet.com/images/';
                         suffix = '-gta-iv-window-cleaning-platform.jpg';

@@ -95,6 +95,14 @@ tiled_map.addTo(map);
             show_custom_layer_controls();
             edit_mode = false;
             map.pm.toggleControls();
+
+            // make sure editing is disabled
+            map.pm.disableDraw();
+            map.pm.disableGlobalEditMode();
+            map.pm.disableGlobalDragMode();
+            map.pm.disableGlobalRemovalMode();
+            map.pm.disableGlobalCutMode();
+            map.pm.disableGlobalRotateMode();
         }
     });
     map.pm.Toolbar.createCustomControl({
@@ -228,6 +236,7 @@ tiled_map.addTo(map);
             <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <div>Icons made by <a href="" title="fjstudio">fjstudio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://fontawesome.com" title="FontAwesome">FontAwesome</a> under <a href="https://fontawesome.com/license" title="CCA4.0">Creative Commons Attribution 4.0 International license</a></div>
             `
     });
 
