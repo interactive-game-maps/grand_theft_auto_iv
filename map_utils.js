@@ -56,12 +56,29 @@ function onEachFeature(feature, layer, args = {}) {
             html.appendChild(title);
 
             if (feature.properties.image_id) {
+                var prefix = '';
+                var suffix = '.jpg';
+                switch (params.list_name) {
+                    case 'pigeons':
+                        prefix = 'https://media.gtanet.com/gta4/images/flying-rats/';
+                        break;
+                    case 'car_thefts':
+                        prefix = 'https://media.gtanet.com/gta4/images/car-thefts/';
+                        break;
+                    case 'window_cleaning_platforms':
+                        prefix = 'https://media.gtanet.com/images/';
+                        suffix = '-gta-iv-window-cleaning-platform.jpg';
+                        break;
+
+                    default:
+                        break;
+                }
                 var image_link = document.createElement('a');
                 image_link.className = 'popup-media';
-                image_link.href = 'https://media.gtanet.com/gta4/images/flying-rats/' + feature.properties.image_id + '.jpg';
+                image_link.href = prefix + feature.properties.image_id + suffix;
 
                 var image = document.createElement('img');
-                image.src = 'https://media.gtanet.com/gta4/images/flying-rats/' + feature.properties.image_id + '.jpg';
+                image.src = prefix + feature.properties.image_id + suffix;
                 image.width = POPUP_WIDTH;
 
                 image_link.appendChild(image);

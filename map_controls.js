@@ -3,8 +3,10 @@ var overlayMaps = {
     "Flying Rats": pigeons_group,
     "Stunt Jumps": stunt_jumps_group,
     "Under Bridges": under_bridges_group,
+    "Stevies Car Thefts": car_thefts_group,
     "Seagulls - BoGT": seagulls_bogt_group,
-    "Seagulls - TLaD": seagulls_tlad_group
+    "Seagulls - TLaD": seagulls_tlad_group,
+    "Window Cleaning Platforms": window_cleaning_platforms_group
 };
 
 // Make overlay layer visible by default
