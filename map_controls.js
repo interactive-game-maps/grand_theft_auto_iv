@@ -1,3 +1,4 @@
+// Defining overlay maps - markers
 var overlayMaps = {
     "Flying Rats": pigeons_group,
     "Stunt Jumps": stunt_jumps_group,
@@ -15,7 +16,70 @@ map.addLayer(under_bridges_group);
 map.fitBounds([[0, 0], [-120, 190]]);
 
 // Add user selection to map
-L.control.layers(baseMaps, overlayMaps).addTo(map);
+L.control.layers(baseMaps, overlayMaps, {
+    hideSingleBase: true
+}).addTo(map);
+
+{// Add custom layers to map
+
+    // https://stackoverflow.com/a/51484131
+    // Add method to layer control class
+    L.Control.Layers.include({
+        getOverlays: (args = {}) => {
+            var defaults = {
+                only_active: false
+            };
+            var params = { ...defaults, ...args } // right-most object overwrites
+
+            // create hash to hold all layers
+            var control, layers;
+            layers = {};
+            // control = this;
+            control = custom_layer_controls;
+
+            // loop thru all layers in control
+            control._layers.forEach(function (obj) {
+                var layerName;
+
+                // check if layer is an overlay
+                if (obj.overlay) {
+                    // get name of overlay
+                    layerName = obj.name;
+                    // store whether it's present on the map or not
+                    if (params.only_active && !map.hasLayer(obj.layer)) {
+                        return;
+                    }
+                    return layers[layerName] = map.hasLayer(obj.layer);
+                }
+            });
+
+            return layers;
+        }
+    });
+
+    var custom_layers = {};
+    if (localStorage.getItem('custom_layers')) {
+        JSON.parse(localStorage.getItem('custom_layers')).forEach(element => {
+            if (!localStorage.getItem(element)) {
+                return;
+            }
+
+            var custom_layer = L.geoJSON(JSON.parse(localStorage.getItem(element)), {
+                onEachFeature: (feature, layer) => {
+                    create_editable_popup(layer);
+                },
+                pmIgnore: false
+            });
+            custom_layers[element] = custom_layer;
+        });
+    }
+
+    var custom_layer_controls;
+    custom_layer_controls = new L.control.layers(null, custom_layers, {
+        collapsed: false
+    });
+    show_custom_layer_controls();
+}
 
 // hide all previously checked marker
 // iterate over all lists
