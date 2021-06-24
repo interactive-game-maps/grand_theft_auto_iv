@@ -3,10 +3,11 @@ var seagulls_bogt_list = document.createElement('ul');
 seagulls_bogt_list.className = 'collectibles_list';
 
 // Add list to sidebar
+var seagulls_bogt_group_name = 'Seagulls - BoGT';
 sidebar.addPanel({
     id: 'seagulls_bogt',
     tab: '<i class="fas fa-crow"></i>',
-    title: 'Seagulls - BoGT',
+    title: seagulls_bogt_group_name,
     pane: '<p></p>' // placeholder to get a proper pane
 });
 document.getElementById('seagulls_bogt').appendChild(seagulls_bogt_list);
@@ -40,4 +41,5 @@ L.geoJSON(seagulls_bogt, {
         });
     }
 }).addTo(seagulls_bogt_group);
-marker.get('seagulls_bogt').set("group", seagulls_bogt_group);
+marker.get('seagulls_bogt').set('group', seagulls_bogt_group);
+marker.get('seagulls_bogt').set('name', seagulls_bogt_group_name);

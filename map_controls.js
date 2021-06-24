@@ -1,19 +1,8 @@
 // Defining overlay maps - markers
-var overlayMaps = {
-    "Flying Rats": pigeons_group,
-    "Stunt Jumps": stunt_jumps_group,
-    "Under Bridges": under_bridges_group,
-    "Stevies Car Thefts": car_thefts_group,
-    "Random Encounters": strangers_group,
-    "Seagulls - BoGT": seagulls_bogt_group,
-    "Seagulls - TLaD": seagulls_tlad_group,
-    "Window Cleaning Platforms": window_cleaning_platforms_group
-};
-
-// Make overlay layer visible by default
-map.addLayer(pigeons_group);
-map.addLayer(stunt_jumps_group);
-map.addLayer(under_bridges_group);
+var overlayMaps = {};
+marker.forEach((value, key) => {
+    overlayMaps[value.get('name')] = value.get('group');
+});
 
 // Center view over map
 map.fitBounds([[0, 0], [-120, 190]]);
@@ -82,14 +71,52 @@ L.control.layers(baseMaps, overlayMaps, {
         collapsed: false
     });
     show_custom_layer_controls();
+
+    map.on('overlayadd', e => {
+        if (!user_layers.includes(e.name)) {
+            user_layers.push(e.name);
+        }
+
+        localStorage.setItem('user_layers', JSON.stringify(user_layers));
+    });
+    map.on('overlayremove ', e => {
+        user_layers = user_layers.filter((value, index, array) => {
+            return value != e.name;
+        });
+
+        localStorage.setItem('user_layers', JSON.stringify(user_layers));
+    });
 }
+
+// Show remembered layers
+var user_layers = JSON.parse(localStorage.getItem('user_layers'));
+if (!user_layers) {
+    user_layers = [
+        pigeons_group_name,
+        stunt_jumps_group_name,
+        under_bridges_group_name
+    ];
+}
+// iterate over all lists
+marker.forEach((value, key) => {
+    // iterate over all IDs
+    if (user_layers.includes(value.get('name'))) {
+        map.addLayer(value.get('group'));
+    }
+});
+Object.keys(custom_layers).forEach(element => {
+    if (user_layers.includes(element)) {
+        map.addLayer(custom_layers[element]);
+    }
+});
 
 // hide all previously checked marker
 // iterate over all lists
 marker.forEach((v, k) => {
     // iterate over all IDs
     v.forEach((value, key) => {
-        if (key == "group") return;
+        if (key == 'group' ||
+            key == 'name') return;
 
         // iterate over all features with that ID
         value.forEach(item => {

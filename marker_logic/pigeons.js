@@ -3,10 +3,11 @@ var pigeons_list = document.createElement('ul');
 pigeons_list.className = 'collectibles_list';
 
 // Add list to sidebar
+var pigeons_group_name = 'Flying Rats';
 sidebar.addPanel({
     id: 'pigeons',
     tab: '🐦',
-    title: 'Flying Rats',
+    title: pigeons_group_name,
     pane: '<p></p>' // placeholder to get a proper pane
 });
 document.getElementById('pigeons').appendChild(pigeons_list);
@@ -40,4 +41,5 @@ L.geoJSON(pigeons, {
         });
     }
 }).addTo(pigeons_group);
-marker.get('pigeons').set("group", pigeons_group);
+marker.get('pigeons').set('group', pigeons_group);
+marker.get('pigeons').set('name', pigeons_group_name);

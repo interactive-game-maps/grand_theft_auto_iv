@@ -261,6 +261,10 @@ tiled_map.addTo(map);
         map.addLayer(marker.get(event.id).get('group'));
         history.replaceState({}, "", "index.html?list=" + event.id);
     });
+
+    sidebar.on('closing', () => {
+        history.replaceState({}, "", "index.html");
+    })
 }
 
 // global list to access marker later on

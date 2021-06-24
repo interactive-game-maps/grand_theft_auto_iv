@@ -1,3 +1,5 @@
+var window_cleaning_platforms_group_name = 'Window Cleaning Platforms';
+
 // Create marker group
 var window_cleaning_platforms_group = L.markerClusterGroup({
     maxClusterRadius: 40
@@ -26,4 +28,5 @@ L.geoJSON(window_cleaning_platforms, {
         });
     }
 }).addTo(window_cleaning_platforms_group);
-marker.get('window_cleaning_platforms').set("group", window_cleaning_platforms_group);
+marker.get('window_cleaning_platforms').set('group', window_cleaning_platforms_group);
+marker.get('window_cleaning_platforms').set('name', window_cleaning_platforms_group_name);

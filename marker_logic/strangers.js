@@ -3,10 +3,11 @@ var strangers_list = document.createElement('ul');
 strangers_list.className = 'collectibles_list';
 
 // Add list to sidebar
+var strangers_group_name = 'Random Encounters';
 sidebar.addPanel({
     id: 'strangers',
     tab: '<i class="fas fa-male"></i>',
-    title: 'Random Encounters',
+    title: stunt_jumps_group_name,
     pane: '<p></p>' // placeholder to get a proper pane
 });
 document.getElementById('strangers').appendChild(strangers_list);
@@ -40,4 +41,5 @@ L.geoJSON(strangers, {
         });
     }
 }).addTo(strangers_group);
-marker.get('strangers').set("group", strangers_group);
+marker.get('strangers').set('group', strangers_group);
+marker.get('strangers').set('name', strangers_group_name);

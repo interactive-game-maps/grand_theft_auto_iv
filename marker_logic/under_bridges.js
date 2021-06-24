@@ -3,10 +3,11 @@ var under_bridges_list = document.createElement('ul');
 under_bridges_list.className = 'collectibles_list';
 
 // Add list to sidebar
+var under_bridges_group_name = 'Under Bridges';
 sidebar.addPanel({
     id: 'under_bridges',
     tab: '🌉',
-    title: 'Under Bridges',
+    title: under_bridges_group_name,
     pane: '<p></p>' // placeholder to get a proper pane
 });
 document.getElementById('under_bridges').appendChild(under_bridges_list);
@@ -38,4 +39,5 @@ L.geoJSON(under_bridges, {
         });
     }
 }).addTo(under_bridges_group);
-marker.get('under_bridges').set("group", under_bridges_group);
+marker.get('under_bridges').set('group', under_bridges_group);
+marker.get('under_bridges').set('name', under_bridges_group_name);

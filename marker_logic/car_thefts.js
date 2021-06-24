@@ -3,10 +3,11 @@ var car_thefts_list = document.createElement('ul');
 car_thefts_list.className = 'collectibles_list';
 
 // Add list to sidebar
+var car_thefts_group_name = 'Stevies Car Thefts';
 sidebar.addPanel({
     id: 'car_thefts',
     tab: '<i class="fas fa-car"></i>',
-    title: 'Stevies Car Thefts',
+    title: car_thefts_group_name,
     pane: '<p></p>' // placeholder to get a proper pane
 });
 document.getElementById('car_thefts').appendChild(car_thefts_list);
@@ -40,4 +41,5 @@ L.geoJSON(car_thefts, {
         });
     }
 }).addTo(car_thefts_group);
-marker.get('car_thefts').set("group", car_thefts_group);
+marker.get('car_thefts').set('group', car_thefts_group);
+marker.get('car_thefts').set('name', car_thefts_group_name);
