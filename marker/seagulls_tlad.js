@@ -7,163 +7,176 @@ var seagulls_tlad = {
         {
             "type": "Feature",
             "properties": {
-                "id": "1"
+                "id": "1",
+                "image_id": "29"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    81.78125,
-                    -77.664062
+                    81.691406,
+                    -77.707031
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "2"
+                "id": "2",
+                "image_id": "25"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    69.515625,
-                    -78
+                    69.84375,
+                    -77.894531
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "3"
+                "id": "3",
+                "image_id": "34"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    127.265625,
-                    -87.132812
+                    127.519531,
+                    -87.070312
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "4"
+                "id": "4",
+                "image_id": "33"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    114.601563,
-                    -93.96875
+                    114.707032,
+                    -93.796875
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "5"
+                "id": "5",
+                "image_id": "32"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    111.25,
-                    -77.90625
+                    111.207031,
+                    -77.980469
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "6"
+                "id": "6",
+                "image_id": "41"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    117.695313,
-                    -62
+                    117.792969,
+                    -62.175781
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "7"
+                "id": "7",
+                "image_id": "40"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    136.929688,
-                    -58.679687
+                    136.960938,
+                    -58.699218
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "8"
+                "id": "8",
+                "image_id": "37"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    148.527344,
-                    -73.429687
+                    147.136719,
+                    -74.488281
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "9"
+                "id": "9",
+                "image_id": "36"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    130.335938,
-                    -68.808594
+                    130.343751,
+                    -68.675781
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "10"
+                "id": "10",
+                "image_id": "42"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    115.054688,
-                    -52.410156
+                    114.824219,
+                    -52.308593
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "11"
+                "id": "11",
+                "image_id": "16"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    55.140625,
-                    -36.328125
+                    55.019531,
+                    -36.039062
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "12"
+                "id": "12",
+                "image_id": "38"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    159.046875,
-                    -58.3125
+                    159.15625,
+                    -58.515625
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "13"
+                "id": "13",
+                "image_id": "39"
             },
             "geometry": {
                 "type": "Point",
@@ -176,137 +189,148 @@ var seagulls_tlad = {
         {
             "type": "Feature",
             "properties": {
-                "id": "14"
+                "id": "14",
+                "image_id": "35"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    124.445313,
-                    -75.21875
+                    124.480469,
+                    -74.949219
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "15"
+                "id": "15",
+                "image_id": "47"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    98.609375,
-                    -14.34375
+                    98.4375,
+                    -14.132812
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "16"
+                "id": "16",
+                "image_id": "48"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    108.21875,
-                    -20.179687
+                    107.972656,
+                    -20.328124
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "17"
+                "id": "17",
+                "image_id": "44"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    95.484375,
-                    -33.234375
+                    95.523438,
+                    -32.96875
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "18"
+                "id": "18",
+                "image_id": "45"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    102.292969,
-                    -26.964844
+                    102.332032,
+                    -27.054688
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "19"
+                "id": "19",
+                "image_id": "50"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    124.722656,
-                    -23.789062
+                    124.417969,
+                    -23.738281
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "20"
+                "id": "20",
+                "image_id": "49"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    122.96875,
-                    -13.890625
+                    121.609375,
+                    -13.070312
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "21"
+                "id": "21",
+                "image_id": "46"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    96.703125,
-                    -20.453125
+                    96.816406,
+                    -20.1875
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "22"
+                "id": "22",
+                "image_id": "07"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    18.8125,
-                    -77.6875
+                    18.84375,
+                    -77.582031
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "23"
+                "id": "23",
+                "image_id": "19"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    76.84375,
-                    -32.765625
+                    76.617188,
+                    -32.707031
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "24"
+                "id": "24",
+                "image_id": "20"
             },
             "geometry": {
                 "type": "Point",
@@ -319,215 +343,232 @@ var seagulls_tlad = {
         {
             "type": "Feature",
             "properties": {
-                "id": "25"
+                "id": "25",
+                "image_id": "14"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    41.0625,
-                    -52.328125
+                    41.128906,
+                    -52.105469
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "26"
+                "id": "26",
+                "image_id": "03"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    37.875,
-                    -39.390625
+                    37.964844,
+                    -39.347656
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "27"
+                "id": "27",
+                "image_id": "04"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    31.234375,
-                    -48.078125
+                    31.648438,
+                    -48.703125
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "28"
+                "id": "28",
+                "image_id": "23"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    70,
-                    -62.25
+                    69.851563,
+                    -61.964844
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "29"
+                "id": "29",
+                "image_id": "13"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    44.507813,
-                    -58.695312
+                    44.535157,
+                    -58.652343
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "30"
+                "id": "30",
+                "image_id": "22"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    79.460938,
-                    -55.789062
+                    79.316407,
+                    -55.535156
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "31"
+                "id": "31",
+                "image_id": "06"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    24.929688,
-                    -65.414062
+                    25.101563,
+                    -64.906249
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "32"
+                "id": "32",
+                "image_id": "30"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    86.375,
-                    -71.984375
+                    86.296875,
+                    -72.140625
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "33"
+                "id": "33",
+                "image_id": "43"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    100.273438,
-                    -53.710937
+                    100.484376,
+                    -53.664062
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "34"
+                "id": "34",
+                "image_id": "28"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    86.179688,
-                    -87.648437
+                    85.964844,
+                    -87.410156
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "35"
+                "id": "35",
+                "image_id": "24"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    73.109375,
-                    -71.546875
+                    72.902344,
+                    -71.261719
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "36"
+                "id": "36",
+                "image_id": "11"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    35.53125,
-                    -71.8125
+                    35.855469,
+                    -71.800781
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "37"
+                "id": "37",
+                "image_id": "21"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    65.679688,
-                    -55.359375
+                    65.984376,
+                    -54.921875
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "38"
+                "id": "38",
+                "image_id": "18"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    73.34375,
-                    -26.851562
+                    73.179688,
+                    -26.808593
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "39"
+                "id": "39",
+                "image_id": "17"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    64.78125,
-                    -39.640625
+                    64.789063,
+                    -39.292969
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "40"
+                "id": "40",
+                "image_id": "26"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    72.980469,
-                    -84.699219
+                    72.984375,
+                    -84.390625
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "41"
+                "id": "41",
+                "image_id": "10"
             },
             "geometry": {
                 "type": "Point",
@@ -540,20 +581,22 @@ var seagulls_tlad = {
         {
             "type": "Feature",
             "properties": {
-                "id": "42"
+                "id": "42",
+                "image_id": "02"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    35.5625,
-                    -29.984375
+                    34.910156,
+                    -30.386719
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "43"
+                "id": "43",
+                "image_id": "27"
             },
             "geometry": {
                 "type": "Point",
@@ -566,85 +609,92 @@ var seagulls_tlad = {
         {
             "type": "Feature",
             "properties": {
-                "id": "44"
+                "id": "44",
+                "image_id": "09"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    32,
-                    -94.828125
+                    31.527344,
+                    -94.734375
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "45"
+                "id": "45",
+                "image_id": "31"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    98.21875,
-                    -77.398437
+                    98.210938,
+                    -77.277343
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "46"
+                "id": "46",
+                "image_id": "08"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    22.539063,
-                    -87.25
+                    22.039063,
+                    -87.296875
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "47"
+                "id": "47",
+                "image_id": "01"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    50.515625,
-                    -20.0625
+                    51.164063,
+                    -20.535156
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "48"
+                "id": "48",
+                "image_id": "15"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    51.203125,
-                    -46.3125
+                    50.601563,
+                    -46.167969
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "49"
+                "id": "49",
+                "image_id": "12"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    37.695313,
-                    -62.414062
+                    37.933594,
+                    -62.363281
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "50"
+                "id": "50",
+                "image_id": "05"
             },
             "geometry": {
                 "type": "Point",

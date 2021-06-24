@@ -75,6 +75,9 @@ function onEachFeature(feature, layer, args = {}) {
                     case 'seagulls_bogt':
                         prefix = 'https://media.gtanet.com/gta4/images/seagulls-bogt/';
                         break;
+                    case 'seagulls_tlad':
+                        prefix = 'https://media.gtanet.com/gta4/images/seagulls/';
+                        break;
 
                     default:
                         break;
