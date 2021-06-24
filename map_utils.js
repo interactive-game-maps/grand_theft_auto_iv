@@ -72,6 +72,9 @@ function onEachFeature(feature, layer, args = {}) {
                         prefix = 'https://media.gtanet.com/images/';
                         suffix = '-gta-iv-window-cleaning-platform.jpg';
                         break;
+                    case 'seagulls_bogt':
+                        prefix = 'https://media.gtanet.com/gta4/images/seagulls-bogt/';
+                        break;
 
                     default:
                         break;
