@@ -1,18 +1,9 @@
-// Create list
-var pigeons_list = document.createElement('ul');
-pigeons_list.className = 'collectibles_list';
-
-// Add list to sidebar
 var pigeons_group_name = 'Flying Rats';
-sidebar.addPanel({
-    id: 'pigeons',
-    tab: '🐦',
-    title: pigeons_group_name,
-    pane: '<p></p>' // placeholder to get a proper pane
-});
-document.getElementById('pigeons').appendChild(pigeons_list);
+var pigeons_group_id = 'pigeons';
+var pigeons_create_checkbox = true;
 
-// Create marker group
+var pigeons_list = createSidebarTab(pigeons_group_id, pigeons_group_name, '🐦');
+
 var pigeons_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
@@ -33,13 +24,24 @@ L.geoJSON(pigeons, {
         });
     },
     onEachFeature: (feature, layer) => {
-        onEachFeature(feature, layer, {
+        addPopup(feature, layer, {
             layer_group: pigeons_group,
             list: pigeons_list,
-            list_name: 'pigeons',
-            create_checkbox: true
+            list_id: pigeons_group_id,
+            create_checkbox: pigeons_create_checkbox
+        });
+        saveMarker(feature, layer, {
+            list_id: pigeons_group_id
         });
     }
 }).addTo(pigeons_group);
-marker.get('pigeons').set('group', pigeons_group);
-marker.get('pigeons').set('name', pigeons_group_name);
+marker.get(pigeons_group_id).set('group', pigeons_group);
+marker.get(pigeons_group_id).set('name', pigeons_group_name);
+
+if (pigeons_create_checkbox) {
+    setColumnCount(marker.get(pigeons_group_id), pigeons_list);
+}
+
+// Add as a default layer
+// This needs the display name because the layer control don't report ids
+default_layers.push(pigeons_group_name);

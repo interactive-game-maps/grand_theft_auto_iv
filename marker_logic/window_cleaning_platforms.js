@@ -1,6 +1,6 @@
 var window_cleaning_platforms_group_name = 'Window Cleaning Platforms';
+var window_cleaning_platforms_group_id = 'window_cleaning_platforms';
 
-// Create marker group
 var window_cleaning_platforms_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
@@ -21,12 +21,14 @@ L.geoJSON(window_cleaning_platforms, {
         });
     },
     onEachFeature: (feature, layer) => {
-        onEachFeature(feature, layer, {
+        addPopup(feature, layer, {
             layer_group: window_cleaning_platforms_group,
-            // list: window_cleaning_platforms_list,
-            list_name: 'window_cleaning_platforms'
+            list_id: window_cleaning_platforms_group_id
+        });
+        saveMarker(feature, layer, {
+            list_id: window_cleaning_platforms_group_id
         });
     }
 }).addTo(window_cleaning_platforms_group);
-marker.get('window_cleaning_platforms').set('group', window_cleaning_platforms_group);
-marker.get('window_cleaning_platforms').set('name', window_cleaning_platforms_group_name);
+marker.get(window_cleaning_platforms_group_id).set('group', window_cleaning_platforms_group);
+marker.get(window_cleaning_platforms_group_id).set('name', window_cleaning_platforms_group_name);

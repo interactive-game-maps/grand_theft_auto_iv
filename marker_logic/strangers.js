@@ -1,18 +1,9 @@
-// Create list
-var strangers_list = document.createElement('ul');
-strangers_list.className = 'collectibles_list';
-
-// Add list to sidebar
 var strangers_group_name = 'Random Encounters';
-sidebar.addPanel({
-    id: 'strangers',
-    tab: '<i class="fas fa-male"></i>',
-    title: stunt_jumps_group_name,
-    pane: '<p></p>' // placeholder to get a proper pane
-});
-document.getElementById('strangers').appendChild(strangers_list);
+var strangers_group_id = 'strangers';
+var strangers_create_checkbox = true;
 
-// Create marker group
+var strangers_list = createSidebarTab(strangers_group_id, strangers_group_name, '<i class="fas fa-male"></i>');
+
 var strangers_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
@@ -33,13 +24,20 @@ L.geoJSON(strangers, {
         });
     },
     onEachFeature: (feature, layer) => {
-        onEachFeature(feature, layer, {
+        addPopup(feature, layer, {
             layer_group: strangers_group,
             list: strangers_list,
-            list_name: 'strangers',
-            create_checkbox: true
+            list_id: strangers_group_id,
+            create_checkbox: strangers_create_checkbox
+        });
+        saveMarker(feature, layer, {
+            list_id: strangers_group_id
         });
     }
 }).addTo(strangers_group);
-marker.get('strangers').set('group', strangers_group);
-marker.get('strangers').set('name', strangers_group_name);
+marker.get(strangers_group_id).set('group', strangers_group);
+marker.get(strangers_group_id).set('name', strangers_group_name);
+
+if (strangers_create_checkbox) {
+    setColumnCount(marker.get(strangers_group_id), strangers_list);
+}

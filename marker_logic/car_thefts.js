@@ -1,18 +1,9 @@
-// Create list
-var car_thefts_list = document.createElement('ul');
-car_thefts_list.className = 'collectibles_list';
-
-// Add list to sidebar
 var car_thefts_group_name = 'Stevies Car Thefts';
-sidebar.addPanel({
-    id: 'car_thefts',
-    tab: '<i class="fas fa-car"></i>',
-    title: car_thefts_group_name,
-    pane: '<p></p>' // placeholder to get a proper pane
-});
-document.getElementById('car_thefts').appendChild(car_thefts_list);
+var car_thefts_group_id = 'car_thefts';
+var car_thefts_create_checkbox = true;
 
-// Create marker group
+var car_thefts_list = createSidebarTab(car_thefts_group_id, car_thefts_group_name, '<i class="fas fa-car"></i>');
+
 var car_thefts_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
@@ -33,13 +24,20 @@ L.geoJSON(car_thefts, {
         });
     },
     onEachFeature: (feature, layer) => {
-        onEachFeature(feature, layer, {
+        addPopup(feature, layer, {
             layer_group: car_thefts_group,
             list: car_thefts_list,
-            list_name: 'car_thefts',
-            create_checkbox: true
+            list_id: car_thefts_group_id,
+            create_checkbox: car_thefts_create_checkbox
+        });
+        saveMarker(feature, layer, {
+            list_id: car_thefts_group_id
         });
     }
 }).addTo(car_thefts_group);
-marker.get('car_thefts').set('group', car_thefts_group);
-marker.get('car_thefts').set('name', car_thefts_group_name);
+marker.get(car_thefts_group_id).set('group', car_thefts_group);
+marker.get(car_thefts_group_id).set('name', car_thefts_group_name);
+
+if (car_thefts_create_checkbox) {
+    setColumnCount(marker.get(car_thefts_group_id), car_thefts_list);
+}

@@ -1,18 +1,9 @@
-// Create list
-var seagulls_tlad_list = document.createElement('ul');
-seagulls_tlad_list.className = 'collectibles_list';
-
-// Add list to sidebar
 var seagulls_tlad_group_name = 'Seagulls - TLaD';
-sidebar.addPanel({
-    id: 'seagulls_tlad',
-    tab: '<i class="fas fa-dove"></i>',
-    title: seagulls_tlad_group_name,
-    pane: '<p></p>' // placeholder to get a proper pane
-});
-document.getElementById('seagulls_tlad').appendChild(seagulls_tlad_list);
+var seagulls_tlad_group_id = 'seagulls_tlad';
+var seagulls_tlad_create_checkbox = true;
 
-// Create marker group
+var seagulls_tlad_list = createSidebarTab(seagulls_tlad_group_id, seagulls_tlad_group_name, '<i class="fas fa-dove"></i>');
+
 var seagulls_tlad_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
@@ -33,13 +24,20 @@ L.geoJSON(seagulls_tlad, {
         });
     },
     onEachFeature: (feature, layer) => {
-        onEachFeature(feature, layer, {
+        addPopup(feature, layer, {
             layer_group: seagulls_tlad_group,
             list: seagulls_tlad_list,
-            list_name: "seagulls_tlad",
-            create_checkbox: true
+            list_id: seagulls_tlad_group_id,
+            create_checkbox: seagulls_tlad_create_checkbox
+        });
+        saveMarker(feature, layer, {
+            list_id: seagulls_tlad_group_id
         });
     }
 }).addTo(seagulls_tlad_group);
-marker.get("seagulls_tlad").set('group', seagulls_tlad_group);
-marker.get('seagulls_tlad').set('name', seagulls_tlad_group_name);
+marker.get(seagulls_tlad_group_id).set('group', seagulls_tlad_group);
+marker.get(seagulls_tlad_group_id).set('name', seagulls_tlad_group_name);
+
+if (seagulls_tlad_create_checkbox) {
+    setColumnCount(marker.get(seagulls_tlad_group_id), seagulls_tlad_list);
+}
