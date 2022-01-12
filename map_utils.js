@@ -1,11 +1,11 @@
 // Helper functions
-function getPopupMedia(feature, html) {
+function getPopupMedia(feature, list_id, html) {
     const POPUP_WIDTH = 500;
 
     if (feature.properties.image_id) {
         var prefix = '';
         var suffix = '.jpg';
-        switch (params.list_id) {
+        switch (list_id) {
             case 'pigeons':
                 prefix = 'https://media.gtanet.com/gta4/images/flying-rats/';
                 break;
@@ -143,7 +143,7 @@ function addPopup(feature, layer, args = {}) {
 
             html.appendChild(title);
 
-            html = getPopupMedia(feature, html);
+            html = getPopupMedia(feature, params.list_id, html);
 
             if (feature.properties.description) {
                 var description = document.createElement('p');
