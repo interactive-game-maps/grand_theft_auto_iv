@@ -290,7 +290,7 @@ tiled_map.addTo(map);
     });
 
     sidebar.on('closing', () => {
-        history.replaceState({}, "", `/${website_subdir}`);
+        history.replaceState({}, "", `/${website_subdir}/`);
     })
 }
 
