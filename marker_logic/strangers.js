@@ -12,6 +12,7 @@ var strangers_icon = L.Icon.Default.extend({
     options: {
         imagePath: './',
         iconUrl: 'marker/strangers.png',
+        iconRetinaUrl: 'marker/strangers.png',
         shadowUrl: 'marker/shadow.png'
     }
 });

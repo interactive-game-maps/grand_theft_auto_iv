@@ -10,6 +10,7 @@ var under_bridges_icon = L.Icon.Default.extend({
     options: {
         imagePath: './',
         iconUrl: 'marker/under_bridges.png',
+        iconRetinaUrl: 'marker/under_bridges.png',
         shadowUrl: 'marker/shadow.png'
     }
 });

@@ -12,6 +12,7 @@ var seagulls_bogt_icon = L.Icon.Default.extend({
     options: {
         imagePath: './',
         iconUrl: 'marker/seagulls_bogt.png',
+        iconRetinaUrl: 'marker/seagulls_bogt.png',
         shadowUrl: 'marker/shadow.png'
     }
 });

@@ -12,6 +12,7 @@ var pigeons_icon = L.Icon.Default.extend({
     options: {
         imagePath: './',
         iconUrl: 'marker/pigeons.png',
+        iconRetinaUrl: 'marker/pigeons.png',
         shadowUrl: 'marker/shadow.png'
     }
 });

@@ -21,7 +21,7 @@ var map = L.map('map', {
 // ./gdal2tiles.py -l -p raster -w none -z 2-5 full_map.jpg map_tiles
 var tiled_map = new L.tileLayer('map_tiles/{z}/{x}/{y}.png', {
     minNativeZoom: 2,
-    maxNativeZoom: 5,
+    maxNativeZoom: L.Browser.retina ? 4 : 5, // 1 level LOWER for high pixel ratio device.
     attribution: '<a href="https://www.gtavision.com/index.php?section=content&site=116">Map from GTAvision.com</a>, <a href="https://www.gta4.net/100-percent-completion-checklist/">Images from GTA4.net</a>',
     noWrap: true,
     detectRetina: true
@@ -29,7 +29,7 @@ var tiled_map = new L.tileLayer('map_tiles/{z}/{x}/{y}.png', {
 
 var tiled_vector = new L.tileLayer('vector_tiles/{z}/{x}/{y}.png', {
     minNativeZoom: 2,
-    maxNativeZoom: 5,
+    maxNativeZoom: L.Browser.retina ? 4 : 5, // 1 level LOWER for high pixel ratio device.
     attribution: '<a href="https://www.mapsland.com/maps/games/large-detailed-map-of-liberty-city-gta-4.jpg">Map from Mapsland</a>, <a href="https://www.gta4.net/100-percent-completion-checklist/">Images from GTA4.net</a>',
     noWrap: true,
     detectRetina: true

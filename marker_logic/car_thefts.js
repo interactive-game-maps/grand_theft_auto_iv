@@ -12,6 +12,7 @@ var car_thefts_icon = L.Icon.Default.extend({
     options: {
         imagePath: './',
         iconUrl: 'marker/car_thefts.png',
+        iconRetinaUrl: 'marker/car_thefts.png',
         shadowUrl: 'marker/shadow.png'
     }
 });

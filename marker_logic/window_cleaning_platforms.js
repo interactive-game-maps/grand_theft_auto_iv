@@ -9,6 +9,7 @@ var window_cleaning_platforms_icon = L.Icon.Default.extend({
     options: {
         imagePath: './',
         iconUrl: 'marker/window_cleaning_platforms.png',
+        iconRetinaUrl: 'marker/window_cleaning_platforms.png',
         shadowUrl: 'marker/shadow.png'
     }
 });
