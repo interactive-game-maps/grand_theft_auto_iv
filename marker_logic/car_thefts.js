@@ -8,19 +8,10 @@ var car_thefts_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
-var car_thefts_icon = L.Icon.Default.extend({
-    options: {
-        imagePath: './',
-        iconUrl: 'marker/car_thefts.png',
-        iconRetinaUrl: 'marker/car_thefts.png',
-        shadowUrl: 'marker/shadow.png'
-    }
-});
-
 L.geoJSON(car_thefts, {
     pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-            icon: new car_thefts_icon,
+            icon: getCustomIcon('fa-car'),
             riseOnHover: true
         });
     },

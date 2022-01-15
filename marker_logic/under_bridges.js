@@ -6,19 +6,10 @@ var under_bridges_list = createSidebarTab(under_bridges_group_id, under_bridges_
 
 var under_bridges_group = L.layerGroup();
 
-var under_bridges_icon = L.Icon.Default.extend({
-    options: {
-        imagePath: './',
-        iconUrl: 'marker/under_bridges.png',
-        iconRetinaUrl: 'marker/under_bridges.png',
-        shadowUrl: 'marker/shadow.png'
-    }
-});
-
 L.geoJSON(under_bridges, {
     pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-            icon: new under_bridges_icon,
+            icon: getCustomIcon('🌉'),
             riseOnHover: true
         });
     },

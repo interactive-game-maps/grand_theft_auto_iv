@@ -8,19 +8,10 @@ var seagulls_tlad_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
-var seagulls_tlad_icon = L.Icon.Default.extend({
-    options: {
-        imagePath: './',
-        iconUrl: 'marker/seagulls_tlad.png',
-        iconRetinaUrl: 'marker/seagulls_tlad.png',
-        shadowUrl: 'marker/shadow.png'
-    }
-});
-
 L.geoJSON(seagulls_tlad, {
     pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-            icon: new seagulls_tlad_icon,
+            icon: getCustomIcon('fa-dove'),
             riseOnHover: true
         });
     },

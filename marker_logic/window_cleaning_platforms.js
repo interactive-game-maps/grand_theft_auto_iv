@@ -5,19 +5,10 @@ var window_cleaning_platforms_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
-var window_cleaning_platforms_icon = L.Icon.Default.extend({
-    options: {
-        imagePath: './',
-        iconUrl: 'marker/window_cleaning_platforms.png',
-        iconRetinaUrl: 'marker/window_cleaning_platforms.png',
-        shadowUrl: 'marker/shadow.png'
-    }
-});
-
 L.geoJSON(window_cleaning_platforms, {
     pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-            icon: new window_cleaning_platforms_icon,
+            icon: getCustomIcon('fa-city'),
             riseOnHover: true
         });
     },

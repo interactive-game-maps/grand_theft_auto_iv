@@ -8,19 +8,10 @@ var seagulls_bogt_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
-var seagulls_bogt_icon = L.Icon.Default.extend({
-    options: {
-        imagePath: './',
-        iconUrl: 'marker/seagulls_bogt.png',
-        iconRetinaUrl: 'marker/seagulls_bogt.png',
-        shadowUrl: 'marker/shadow.png'
-    }
-});
-
 L.geoJSON(seagulls_bogt, {
     pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-            icon: new seagulls_bogt_icon,
+            icon: getCustomIcon('fa-crow'),
             riseOnHover: true
         });
     },

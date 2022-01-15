@@ -8,19 +8,10 @@ var strangers_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
-var strangers_icon = L.Icon.Default.extend({
-    options: {
-        imagePath: './',
-        iconUrl: 'marker/strangers.png',
-        iconRetinaUrl: 'marker/strangers.png',
-        shadowUrl: 'marker/shadow.png'
-    }
-});
-
 L.geoJSON(strangers, {
     pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-            icon: new strangers_icon,
+            icon: getCustomIcon('fa-male'),
             riseOnHover: true
         });
     },

@@ -8,19 +8,10 @@ var pigeons_group = L.markerClusterGroup({
     maxClusterRadius: 40
 });
 
-var pigeons_icon = L.Icon.Default.extend({
-    options: {
-        imagePath: './',
-        iconUrl: 'marker/pigeons.png',
-        iconRetinaUrl: 'marker/pigeons.png',
-        shadowUrl: 'marker/shadow.png'
-    }
-});
-
 L.geoJSON(pigeons, {
     pointToLayer: (feature, latlng) => {
         return L.marker(latlng, {
-            icon: new pigeons_icon,
+            icon: getCustomIcon('🐦'),
             riseOnHover: true
         });
     },
