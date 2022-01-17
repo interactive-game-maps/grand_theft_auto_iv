@@ -4,9 +4,7 @@ var strangers_create_checkbox = true;
 
 var strangers_list = createSidebarTab(strangers_group_id, strangers_group_name, '<i class="fas fa-male"></i>');
 
-var strangers_group = L.markerClusterGroup({
-    maxClusterRadius: 40
-});
+var strangers_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(strangers, {
     pointToLayer: (feature, latlng) => {

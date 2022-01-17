@@ -4,9 +4,7 @@ var seagulls_tlad_create_checkbox = true;
 
 var seagulls_tlad_list = createSidebarTab(seagulls_tlad_group_id, seagulls_tlad_group_name, '<i class="fas fa-dove"></i>');
 
-var seagulls_tlad_group = L.markerClusterGroup({
-    maxClusterRadius: 40
-});
+var seagulls_tlad_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(seagulls_tlad, {
     pointToLayer: (feature, latlng) => {

@@ -4,9 +4,7 @@ var pigeons_create_checkbox = true;
 
 var pigeons_list = createSidebarTab(pigeons_group_id, pigeons_group_name, '🐦');
 
-var pigeons_group = L.markerClusterGroup({
-    maxClusterRadius: 40
-});
+var pigeons_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(pigeons, {
     pointToLayer: (feature, latlng) => {

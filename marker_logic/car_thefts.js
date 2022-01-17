@@ -4,9 +4,7 @@ var car_thefts_create_checkbox = true;
 
 var car_thefts_list = createSidebarTab(car_thefts_group_id, car_thefts_group_name, '<i class="fas fa-car"></i>');
 
-var car_thefts_group = L.markerClusterGroup({
-    maxClusterRadius: 40
-});
+var car_thefts_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(car_thefts, {
     pointToLayer: (feature, latlng) => {

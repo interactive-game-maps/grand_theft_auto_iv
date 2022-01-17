@@ -4,9 +4,7 @@ var seagulls_bogt_create_checkbox = true;
 
 var seagulls_bogt_list = createSidebarTab(seagulls_bogt_group_id, seagulls_bogt_group_name, '<i class="fas fa-crow"></i>');
 
-var seagulls_bogt_group = L.markerClusterGroup({
-    maxClusterRadius: 40
-});
+var seagulls_bogt_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(seagulls_bogt, {
     pointToLayer: (feature, latlng) => {

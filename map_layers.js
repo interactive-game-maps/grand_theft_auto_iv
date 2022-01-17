@@ -2,7 +2,6 @@ var website = 'https://github.com/interactive-game-maps/grand_theft_auto_iv';
 var website_subdir = 'grand_theft_auto_iv';
 var attribution = `
             <div>Images from <a href="https://www.gta4.net/100-percent-completion-checklist/">GTA4.net</a>.</div>
-            <div>Icons made by <a href="https://fontawesome.com" title="FontAwesome">FontAwesome</a> under <a href="https://fontawesome.com/license" title="CCA4.0">Creative Commons Attribution 4.0 International license</a></div>
             `
 
 const MAX_ZOOM = 5;

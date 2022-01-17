@@ -4,7 +4,7 @@ var under_bridges_create_checkbox = true;
 
 var under_bridges_list = createSidebarTab(under_bridges_group_id, under_bridges_group_name, '🌉');
 
-var under_bridges_group = L.layerGroup();
+var under_bridges_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(under_bridges, {
     pointToLayer: (feature, latlng) => {

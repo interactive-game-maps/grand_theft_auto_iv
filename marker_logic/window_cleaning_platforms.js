@@ -1,9 +1,7 @@
 var window_cleaning_platforms_group_name = 'Window Cleaning Platforms';
 var window_cleaning_platforms_group_id = 'window_cleaning_platforms';
 
-var window_cleaning_platforms_group = L.markerClusterGroup({
-    maxClusterRadius: 40
-});
+var window_cleaning_platforms_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(window_cleaning_platforms, {
     pointToLayer: (feature, latlng) => {
