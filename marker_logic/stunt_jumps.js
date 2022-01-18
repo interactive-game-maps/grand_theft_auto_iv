@@ -3,7 +3,6 @@ var stunt_jumps_group_id = 'stunt_jumps';
 var stunt_jumps_create_checkbox = true;
 
 var stunt_jumps_list = createSidebarTab(stunt_jumps_group_id, stunt_jumps_group_name, '<i class="fas fa-car"></i>');
-
 var stunt_jumps_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(stunt_jumps, {
@@ -24,7 +23,10 @@ L.geoJSON(stunt_jumps, {
             list_id: stunt_jumps_group_id
         });
     }
-}).addTo(stunt_jumps_group);
+}).getLayers().forEach(layer => {
+    stunt_jumps_group.addLayer(layer);
+});
+
 marker.get(stunt_jumps_group_id).set('group', stunt_jumps_group);
 marker.get(stunt_jumps_group_id).set('name', stunt_jumps_group_name);
 

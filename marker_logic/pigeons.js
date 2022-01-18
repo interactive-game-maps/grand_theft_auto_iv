@@ -3,7 +3,6 @@ var pigeons_group_id = 'pigeons';
 var pigeons_create_checkbox = true;
 
 var pigeons_list = createSidebarTab(pigeons_group_id, pigeons_group_name, '🐦');
-
 var pigeons_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(pigeons, {
@@ -24,7 +23,10 @@ L.geoJSON(pigeons, {
             list_id: pigeons_group_id
         });
     }
-}).addTo(pigeons_group);
+}).getLayers().forEach(layer => {
+    pigeons_group.addLayer(layer);
+});
+
 marker.get(pigeons_group_id).set('group', pigeons_group);
 marker.get(pigeons_group_id).set('name', pigeons_group_name);
 

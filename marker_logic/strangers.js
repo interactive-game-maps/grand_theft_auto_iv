@@ -3,7 +3,6 @@ var strangers_group_id = 'strangers';
 var strangers_create_checkbox = true;
 
 var strangers_list = createSidebarTab(strangers_group_id, strangers_group_name, '<i class="fas fa-male"></i>');
-
 var strangers_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(strangers, {
@@ -24,7 +23,10 @@ L.geoJSON(strangers, {
             list_id: strangers_group_id
         });
     }
-}).addTo(strangers_group);
+}).getLayers().forEach(layer => {
+    strangers_group.addLayer(layer);
+});
+
 marker.get(strangers_group_id).set('group', strangers_group);
 marker.get(strangers_group_id).set('name', strangers_group_name);
 

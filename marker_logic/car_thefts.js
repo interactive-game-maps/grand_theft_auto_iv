@@ -3,7 +3,6 @@ var car_thefts_group_id = 'car_thefts';
 var car_thefts_create_checkbox = true;
 
 var car_thefts_list = createSidebarTab(car_thefts_group_id, car_thefts_group_name, '<i class="fas fa-car"></i>');
-
 var car_thefts_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(car_thefts, {
@@ -24,7 +23,10 @@ L.geoJSON(car_thefts, {
             list_id: car_thefts_group_id
         });
     }
-}).addTo(car_thefts_group);
+}).getLayers().forEach(layer => {
+    car_thefts_group.addLayer(layer);
+});
+
 marker.get(car_thefts_group_id).set('group', car_thefts_group);
 marker.get(car_thefts_group_id).set('name', car_thefts_group_name);
 

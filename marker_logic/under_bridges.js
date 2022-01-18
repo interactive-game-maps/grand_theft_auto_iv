@@ -3,7 +3,6 @@ var under_bridges_group_id = 'under_bridges';
 var under_bridges_create_checkbox = true;
 
 var under_bridges_list = createSidebarTab(under_bridges_group_id, under_bridges_group_name, '🌉');
-
 var under_bridges_group = L.featureGroup.subGroup(marker_cluster);
 
 L.geoJSON(under_bridges, {
@@ -24,7 +23,10 @@ L.geoJSON(under_bridges, {
             list_id: under_bridges_group_id
         });
     }
-}).addTo(under_bridges_group);
+}).getLayers().forEach(layer => {
+    under_bridges_group.addLayer(layer);
+});
+
 marker.get(under_bridges_group_id).set('group', under_bridges_group);
 marker.get(under_bridges_group_id).set('name', under_bridges_group_name);
 

@@ -19,6 +19,9 @@ L.geoJSON(window_cleaning_platforms, {
             list_id: window_cleaning_platforms_group_id
         });
     }
-}).addTo(window_cleaning_platforms_group);
+}).getLayers().forEach(layer => {
+    window_cleaning_platforms_group.addLayer(layer);
+});
+
 marker.get(window_cleaning_platforms_group_id).set('group', window_cleaning_platforms_group);
 marker.get(window_cleaning_platforms_group_id).set('name', window_cleaning_platforms_group_name);
