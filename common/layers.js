@@ -4,11 +4,6 @@ var marker = new Map();
 // initialize default layers variable where the layers can be added to later on
 var default_layers = [];
 
-// initialize combining marker cluster
-var marker_cluster = L.markerClusterGroup({
-    maxClusterRadius: 20
-}).addTo(map);
-
 var common_attribution = `
 <li><a href="https://github.com/Leaflet/Leaflet" title="Leaflet">Leaflet</a> under <a href="https://github.com/Leaflet/Leaflet/blob/ee71642691c2c71605bacff69456760cfbc80a2a/LICENSE">BSD2</a>.</li>
 <li><a href="https://github.com/Leaflet/Leaflet.markercluster" title="Leaflet.markercluster">Leaflet.markercluster</a> under <a href="https://github.com/Leaflet/Leaflet.markercluster/blob/31360f226e1a40c03c71d68b016891beb5e63370/MIT-LICENCE.txt">MIT</a>.</li>
@@ -17,6 +12,10 @@ var common_attribution = `
 <li><a href="https://github.com/geoman-io/leaflet-geoman" title="Leaflet-Geoman">Leaflet-Geoman</a> under <a href="https://github.com/geoman-io/leaflet-geoman/blob/1fdc918fa39ffa84327fdf639fa75865168f716d/LICENSE">MIT</a>.</li>
 <li>Icons from <a href="https://fontawesome.com/" title="Font Awesome">Font Awesome</a> under <a href="https://fontawesome.com/license">CCA4</a>.</li>
 `
+
+var marker_cluster = L.markerClusterGroup({
+    maxClusterRadius: 20
+}).addTo(map);
 
 // Save currently highlighted marker for easy access
 var highlightedMarker = [];
