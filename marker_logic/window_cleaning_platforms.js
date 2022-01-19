@@ -1,10 +1,9 @@
 var window_cleaning_platforms_layer = new InteractiveLayer('window_cleaning_platforms', window_cleaning_platforms, {
     name: "Window cleaning platforms",
     create_feature_popup: true,
-    sidebar_icon_html: '🌉',
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-            icon: getCustomIcon('🌉'),
+            icon: getCustomIcon('fa-city'),
             riseOnHover: true
         });
     }
