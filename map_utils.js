@@ -1,6 +1,6 @@
-// Helper functions
 function getPopupMedia(feature, list_id, html) {
-    const POPUP_WIDTH = 500;
+    const POPUP_WIDTH_16_9 = Math.min(500, window.screen.availWidth - 100, (window.screen.availHeight - 200) * 16 / 9);
+    const POPUP_WIDTH_4_3 = Math.min(500, window.screen.availWidth - 100, (window.screen.availHeight - 200) * 4 / 3);
 
     if (feature.properties.image_id) {
         var prefix = '';
@@ -30,20 +30,20 @@ function getPopupMedia(feature, list_id, html) {
                 break;
         }
         var image_link = document.createElement('a');
-        image_link.className = 'popup-media';
         image_link.href = prefix + feature.properties.image_id + suffix;
 
         var image = document.createElement('img');
+        image.className = 'popup-media';
         image.src = prefix + feature.properties.image_id + suffix;
-        image.width = POPUP_WIDTH;
+        image.width = POPUP_WIDTH_16_9;
 
         image_link.appendChild(image);
         html.appendChild(image_link);
     } else if (feature.properties.video_id) {
         var video = document.createElement('iframe');
         video.className = 'popup-media';
-        video.width = POPUP_WIDTH;
-        video.height = POPUP_WIDTH / 16 * 9;
+        video.width = POPUP_WIDTH_16_9;
+        video.height = POPUP_WIDTH_16_9 / 16 * 9;
         video.src = `https://www.youtube-nocookie.com/embed/${feature.properties.video_id}`;
         video.title = 'YouTube video player';
         video.frameborder = 0;
