@@ -1,5 +1,5 @@
-function getSeagullsTlad() {
-    return new InteractiveLayer('seagulls_tlad', seagulls_tlad, {
+function addSeagullsTlad(map) {
+    map.addInteractiveLayer('seagulls_tlad', seagulls_tlad, {
         name: "Seagulls - TLaD",
         create_checkbox: true,
         create_feature_popup: true,

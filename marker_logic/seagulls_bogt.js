@@ -1,5 +1,5 @@
-function getSeagullsBogt() {
-    return new InteractiveLayer('seagulls_bogt', seagulls_bogt, {
+function addSeagullsBogt(map) {
+    map.addInteractiveLayer('seagulls_bogt', seagulls_bogt, {
         name: "Seagulls - BoGT",
         create_checkbox: true,
         create_feature_popup: true,

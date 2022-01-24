@@ -20,13 +20,13 @@ interactive_map.addTileLayer('Vector map', {
     attribution: 'Map from <a href="https://www.mapsland.com/maps/games/large-detailed-map-of-liberty-city-gta-4.jpg">Mapsland</a>'
 }, 'vector_tiles/{z}/{x}/{y}.png');
 
-interactive_map.addInteractiveLayer(getPigeons());
-interactive_map.addInteractiveLayer(getStuntJumps());
-interactive_map.addInteractiveLayer(getUnderBridges());
-interactive_map.addInteractiveLayer(getCarThefts());
-interactive_map.addInteractiveLayer(getStrangers());
-interactive_map.addInteractiveLayer(getSeagullsBogt());
-interactive_map.addInteractiveLayer(getSeagullsTlad());
-interactive_map.addInteractiveLayer(getWindowCleaningPlatforms());
+addPigeons(interactive_map);
+addStuntJumps(interactive_map);
+addUnderBridges(interactive_map);
+addCarThefts(interactive_map);
+addStrangers(interactive_map);
+addSeagullsBogt(interactive_map);
+addSeagullsTlad(interactive_map);
+addWindowCleaningPlatforms(interactive_map);
 
 interactive_map.finalize();

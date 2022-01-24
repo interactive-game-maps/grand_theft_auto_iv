@@ -1,5 +1,5 @@
-function getPigeons() {
-    return new InteractiveLayer('pigeons', pigeons, {
+function addPigeons(map) {
+    map.addInteractiveLayer('pigeons', pigeons, {
         name: "Flying rats",
         create_checkbox: true,
         create_feature_popup: true,

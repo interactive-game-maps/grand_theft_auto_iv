@@ -1,5 +1,5 @@
-function getStuntJumps() {
-    return new InteractiveLayer('stunt_jumps', stunt_jumps, {
+function addStuntJumps(map) {
+    map.addInteractiveLayer('stunt_jumps', stunt_jumps, {
         name: "Stunt jumps",
         create_checkbox: true,
         create_feature_popup: true,

@@ -1,5 +1,5 @@
-function getStrangers() {
-    return new InteractiveLayer('strangers', strangers, {
+function addStrangers(map) {
+    map.addInteractiveLayer('strangers', strangers, {
         name: "Random encounter",
         create_checkbox: true,
         create_feature_popup: true,

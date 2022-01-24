@@ -1,5 +1,5 @@
-function getCarThefts() {
-    return new InteractiveLayer('car_thefts', car_thefts, {
+function addCarThefts(map) {
+    map.addInteractiveLayer('car_thefts', car_thefts, {
         name: "Stevie's car thefts",
         create_checkbox: true,
         create_feature_popup: true,

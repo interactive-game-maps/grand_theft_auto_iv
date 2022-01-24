@@ -1,5 +1,5 @@
-function getUnderBridges() {
-    return new InteractiveLayer('under_bridges', under_bridges, {
+function addUnderBridges(map) {
+    map.addInteractiveLayer('under_bridges', under_bridges, {
         name: "Under bridges",
         create_checkbox: true,
         create_feature_popup: true,
