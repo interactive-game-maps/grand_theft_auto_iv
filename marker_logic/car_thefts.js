@@ -9,6 +9,12 @@ function addCarThefts(map) {
                 icon: Utils.getCustomIcon('fa-car'),
                 riseOnHover: true
             });
+        },
+        onEachFeature: function (feature, layer) {
+            layer.bindTooltip(feature.properties.id, {
+                permanent: true,
+                direction: 'bottom'
+            });
         }
     });
 }

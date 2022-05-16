@@ -1,4 +1,6 @@
-function getPopupMedia(feature, list_id, html) {
+function getPopupMedia(feature, list_id) {
+    var html = document.createElement('div');
+
     const POPUP_WIDTH_16_9 = Math.min(500, window.screen.availWidth - 100, (window.screen.availHeight - 200) * 16 / 9);
     const POPUP_WIDTH_4_3 = Math.min(500, window.screen.availWidth - 100, (window.screen.availHeight - 200) * 4 / 3);
 
