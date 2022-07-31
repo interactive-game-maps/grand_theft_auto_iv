@@ -10,6 +10,9 @@ function addStuntJumps(map) {
                 icon: Utils.getCustomIcon('fa-car'),
                 riseOnHover: true
             });
+        },
+        coordsToLatLng: function (coords) {
+            return gtaCoordinatesToLeaflet(coords);
         }
     });
 }

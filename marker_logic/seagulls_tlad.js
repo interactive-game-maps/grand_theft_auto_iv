@@ -9,6 +9,9 @@ function addSeagullsTlad(map) {
                 icon: Utils.getCustomIcon('fa-dove'),
                 riseOnHover: true
             });
+        },
+        coordsToLatLng: function (coords) {
+            return gtaCoordinatesToLeaflet(coords);
         }
     });
 }

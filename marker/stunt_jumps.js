@@ -1,5 +1,6 @@
 // geoJson
 
+// https://ehgames.com/gta/map/iv_usjs
 var stunt_jumps = {
     "type": "FeatureCollection",
     "features": [
@@ -7,13 +8,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "1",
-                "video_id": "TGk6WIOVhMs"
+                "video_id": "_rwNuSVKvkk"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    110.46875,
-                    -29.3125
+                    1273.05,
+                    891.17,
+                    30.2
                 ]
             }
         },
@@ -21,13 +23,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "2",
-                "video_id": "nVTKlO3MBRA"
+                "video_id": "uXicSqBwtGM"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    105.125,
-                    -34.71875
+                    -222.27,
+                    132.04,
+                    14.72
                 ]
             }
         },
@@ -35,13 +38,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "3",
-                "video_id": "m5MM2kORmsU"
+                "video_id": "nVTKlO3MBRA"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    113.21875,
-                    -32.3125
+                    699.3619,
+                    1366.308,
+                    25.2288
                 ]
             }
         },
@@ -49,13 +53,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "4",
-                "video_id": "1EHnY1a5FzE"
+                "video_id": "m5MM2kORmsU"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    110.875,
-                    -32.875
+                    948.2062,
+                    1423.62,
+                    25.23
                 ]
             }
         },
@@ -63,13 +68,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "5",
-                "video_id": "_rwNuSVKvkk"
+                "video_id": "Waap9Dbkhk4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    123.3125,
-                    -49.25
+                    256.39,
+                    -255.39,
+                    4.93
                 ]
             }
         },
@@ -77,13 +83,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "6",
-                "video_id": "WOXXlSOp63w"
+                "video_id": "72LzsT99edk"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    113.25,
-                    -53.5
+                    966,
+                    693.88,
+                    26.63
                 ]
             }
         },
@@ -91,13 +98,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "7",
-                "video_id": "72LzsT99edk"
+                "video_id": "LGimf3DsivY"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    113.53125,
-                    -56.71875
+                    -996.02,
+                    865.49,
+                    22.19
                 ]
             }
         },
@@ -105,13 +113,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "8",
-                "video_id": "A4C05hDleBI"
+                "video_id": "PFogwoYt8pQ"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    116.84375,
-                    -57
+                    -1626.88,
+                    977.08,
+                    30.06
                 ]
             }
         },
@@ -119,13 +128,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "9",
-                "video_id": "wQ_HzRfXnrE"
+                "video_id": "s1LL5UX4vGc"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    110.8125,
-                    -62.25
+                    -1436.28,
+                    -477,
+                    50.67
                 ]
             }
         },
@@ -133,13 +143,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "10",
-                "video_id": "C99CEaOvySE"
+                "video_id": "sQOCf3Kcpk4"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    119.78125,
-                    -60.5
+                    -1263,
+                    1775.843,
+                    29.8908
                 ]
             }
         },
@@ -147,13 +158,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "11",
-                "video_id": "YXAmzC2bZeA"
+                "video_id": "htr8digZmX0"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    125.4375,
-                    -63.34375
+                    -1037.76,
+                    1438.787,
+                    40
                 ]
             }
         },
@@ -161,13 +173,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "12",
-                "video_id": "Aidka5JO44o"
+                "video_id": "A4C05hDleBI"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    125.40625,
-                    -65.375
+                    1046.297,
+                    653.2679,
+                    36.4369
                 ]
             }
         },
@@ -175,13 +188,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "13",
-                "video_id": "UAHO16WhXEQ"
+                "video_id": "WOXXlSOp63w"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    112.125,
-                    -69.5
+                    950.836,
+                    756.1079,
+                    25.0202
                 ]
             }
         },
@@ -189,13 +203,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "14",
-                "video_id": "suUBiAibTtU"
+                "video_id": "YXAmzC2bZeA"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    130.28125,
-                    -68.84375
+                    1332.05,
+                    459.8994,
+                    28.1164
                 ]
             }
         },
@@ -203,13 +218,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "15",
-                "video_id": "UcAccD5NtzU"
+                "video_id": "Aidka5JO44o"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    138.125,
-                    -67.40625
+                    1336.656,
+                    397.921,
+                    32.5553
                 ]
             }
         },
@@ -217,13 +233,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "16",
-                "video_id": "rPxMRxcOrRQ"
+                "video_id": "bi4wjMvMVuE"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    147.46875,
-                    -55.09375
+                    -529.8916,
+                    363.6744,
+                    25.4872
                 ]
             }
         },
@@ -231,13 +248,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "17",
-                "video_id": "PHupBR0oy2M"
+                "video_id": "SJOYGrmxvlc"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    147.59375,
-                    -66.5625
+                    -1037.476,
+                    1199,
+                    26.2928
                 ]
             }
         },
@@ -245,13 +263,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "18",
-                "video_id": "rPfj5he2b40"
+                "video_id": "UcAccD5NtzU"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    65.59375,
-                    -31.25
+                    1724.24,
+                    337.94,
+                    22.95
                 ]
             }
         },
@@ -259,13 +278,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "19",
-                "video_id": "MQRtDjLULCI"
+                "video_id": "w0D0xHO6n2c"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    76.71875,
-                    -26.03125
+                    -89.32,
+                    1657.44,
+                    18.97
                 ]
             }
         },
@@ -273,13 +293,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "20",
-                "video_id": "w0D0xHO6n2c"
+                "video_id": "whCeBff83gk"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    79.84375,
-                    -24.6875
+                    -966.9791,
+                    1570.162,
+                    26.3503
                 ]
             }
         },
@@ -287,13 +308,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "21",
-                "video_id": "bvnd9ilaIfI"
+                "video_id": "1EHnY1a5FzE"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    80.375,
-                    -27.21875
+                    876.94,
+                    1406.2,
+                    25.32
                 ]
             }
         },
@@ -301,13 +323,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "22",
-                "video_id": "lViA849djnA"
+                "video_id": "e7oOUNJmS68"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    82.15625,
-                    -33.875
+                    235.11,
+                    -647.56,
+                    7.7
                 ]
             }
         },
@@ -315,13 +338,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "23",
-                "video_id": "JHqH0dLUwKI"
+                "video_id": "ks0hFhM9zd0"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    87.96875,
-                    -54.625
+                    -795.05,
+                    899.35,
+                    13.09
                 ]
             }
         },
@@ -329,13 +353,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "24",
-                "video_id": "bi4wjMvMVuE"
+                "video_id": "aPzyEu4PnYA"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    66.21875,
-                    -66.46875
+                    -831.11,
+                    825.35,
+                    3.54
                 ]
             }
         },
@@ -343,14 +368,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "25",
-                "video_id": "4rQ753F2j9s",
-                "description": "Needs a bike - drive up the stairs inside the police station to the roof."
+                "video_id": "UjzHki5YLjE"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    88.03125,
-                    -63.8125
+                    -1761.18,
+                    -51.2,
+                    16.25
                 ]
             }
         },
@@ -358,14 +383,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "26",
-                "video_id": "HDKx4gN9QhE",
-                "description": "Boat required"
+                "video_id": "kiTxTSiB7mI"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    91.0625,
-                    -60.25
+                    -70.15,
+                    -411.56,
+                    14.66
                 ]
             }
         },
@@ -373,13 +398,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "27",
-                "video_id": "tfLrju2FQYc"
+                "video_id": "BRmLbv6nkqU"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    76.5625,
-                    -72.25
+                    -1420.74,
+                    883.51,
+                    22.92
                 ]
             }
         },
@@ -387,13 +413,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "28",
-                "video_id": "uXicSqBwtGM"
+                "video_id": "wVHDc7V77Z8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    75.15625,
-                    -73.84375
+                    -1017.72,
+                    1006.4,
+                    21.17
                 ]
             }
         },
@@ -401,13 +428,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "29",
-                "video_id": "Waap9Dbkhk4"
+                "video_id": "PHupBR0oy2M"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    91,
-                    -86.59375
+                    2027.53,
+                    378.01,
+                    18
                 ]
             }
         },
@@ -415,14 +443,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "30",
-                "video_id": "5clL4osRcxo",
-                "description": "Boat required"
+                "video_id": "wQ_HzRfXnrE"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    96.1875,
-                    -83.9375
+                    860.41,
+                    488.52,
+                    13.74
                 ]
             }
         },
@@ -430,13 +458,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "31",
-                "video_id": "kiTxTSiB7mI"
+                "video_id": "rPfj5he2b40"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    80.78125,
-                    -91.34375
+                    -537.95,
+                    1463.89,
+                    18.6
                 ]
             }
         },
@@ -444,13 +473,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "32",
-                "video_id": "e7oOUNJmS68"
+                "video_id": "C9qytIG6aDg"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    89.96875,
-                    -99.09375
+                    -1805.73,
+                    -467.76,
+                    46.67
                 ]
             }
         },
@@ -458,13 +488,15 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "33",
-                "video_id": "sQOCf3Kcpk4"
+                "video_id": "5clL4osRcxo",
+                "description": "Boat required"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    42.625,
-                    -21.59375
+                    408.8,
+                    -186.18,
+                    1.81
                 ]
             }
         },
@@ -472,13 +504,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "34",
-                "video_id": "GFNXHGMhYpU"
+                "video_id": "lViA849djnA"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    56.125,
-                    -24.28125
+                    -4.48,
+                    1398.43,
+                    20.37
                 ]
             }
         },
@@ -486,13 +519,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "35",
-                "video_id": "whCeBff83gk"
+                "video_id": "UAHO16WhXEQ"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    51.6875,
-                    -28.09375
+                    896.57,
+                    261.37,
+                    42.25
                 ]
             }
         },
@@ -500,13 +534,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "36",
-                "video_id": "htr8digZmX0"
+                "video_id": "JHqH0dLUwKI"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    49.375,
-                    -32.03125
+                    162.74,
+                    747.9,
+                    8.49
                 ]
             }
         },
@@ -514,13 +549,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "37",
-                "video_id": "SJOYGrmxvlc"
+                "video_id": "bsvJUlb5ZQs"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    49.375,
-                    -39.71875
+                    -1325.75,
+                    899.62,
+                    23.33
                 ]
             }
         },
@@ -528,13 +564,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "38",
-                "video_id": "wVHDc7V77Z8"
+                "video_id": "MQRtDjLULCI"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    50.0625,
-                    -45.96875
+                    -182,
+                    1631.88,
+                    20.19
                 ]
             }
         },
@@ -542,13 +579,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "39",
-                "video_id": "LGimf3DsivY"
+                "video_id": "bvnd9ilaIfI"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    50.65625,
-                    -49.4375
+                    -77,
+                    1574.16,
+                    21.93
                 ]
             }
         },
@@ -556,13 +594,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "40",
-                "video_id": "ks0hFhM9zd0"
+                "video_id": "uxzsAmTzc4w"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    57.21875,
-                    -49.0625
+                    -1635.21,
+                    832.59,
+                    30.1
                 ]
             }
         },
@@ -570,13 +609,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "41",
-                "video_id": "aPzyEu4PnYA"
+                "video_id": "tfLrju2FQYc"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    56.5,
-                    -51
+                    -198.57,
+                    185,
+                    14.96
                 ]
             }
         },
@@ -584,13 +624,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "42",
-                "video_id": "PFogwoYt8pQ"
+                "video_id": "GFNXHGMhYpU"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    30.8125,
-                    -46.875
+                    -838.97,
+                    1688.67,
+                    1.79
                 ]
             }
         },
@@ -598,13 +639,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "43",
-                "video_id": "uxzsAmTzc4w"
+                "video_id": "suUBiAibTtU"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    30.28125,
-                    -52.25
+                    1482.7,
+                    288.98,
+                    24.69
                 ]
             }
         },
@@ -612,13 +654,15 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "44",
-                "video_id": "BRmLbv6nkqU"
+                "video_id": "HDKx4gN9QhE",
+                "description": "Boat required"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    37.46875,
-                    -50.0625
+                    256.75,
+                    558.5,
+                    1.06
                 ]
             }
         },
@@ -626,13 +670,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "45",
-                "video_id": "bsvJUlb5ZQs"
+                "video_id": "zOOKMydHHeo"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    40.4375,
-                    -49.6875
+                    -1319.58,
+                    -7.11,
+                    12.7
                 ]
             }
         },
@@ -640,13 +685,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "46",
-                "video_id": "UjzHki5YLjE"
+                "video_id": "C99CEaOvySE"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    26.46875,
-                    -79.5
+                    1167.33,
+                    552.26,
+                    31.9
                 ]
             }
         },
@@ -659,8 +705,9 @@ var stunt_jumps = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    37.21875,
-                    -81.65625
+                    -1424.97,
+                    -118.48,
+                    6.33
                 ]
             }
         },
@@ -668,13 +715,15 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "48",
-                "video_id": "zOOKMydHHeo"
+                "video_id": "4rQ753F2j9s",
+                "description": "Needs a bike - drive up the stairs inside the police station to the roof."
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    40.46875,
-                    -78.25
+                    169.89,
+                    458.66,
+                    28.71
                 ]
             }
         },
@@ -682,13 +731,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "49",
-                "video_id": "C9qytIG6aDg"
+                "video_id": "rPxMRxcOrRQ"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    25.34375,
-                    -92.25
+                    2016.47,
+                    722.67,
+                    13.95
                 ]
             }
         },
@@ -696,13 +746,14 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "50",
-                "video_id": "s1LL5UX4vGc"
+                "video_id": "TGk6WIOVhMs"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    36.375,
-                    -92.9375
+                    865.18,
+                    1515.82,
+                    16.6
                 ]
             }
         }

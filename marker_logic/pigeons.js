@@ -10,6 +10,9 @@ function addPigeons(map) {
                 icon: Utils.getCustomIcon('🐦'),
                 riseOnHover: true
             });
+        },
+        coordsToLatLng: function (coords) {
+            return gtaCoordinatesToLeaflet(coords);
         }
     });
 }

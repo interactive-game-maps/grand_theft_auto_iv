@@ -13,8 +13,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    81.691406,
-                    -77.707031
+                    -31.12,
+                    1.08,
+                    22.03
                 ]
             }
         },
@@ -27,8 +28,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    69.84375,
-                    -77.894531
+                    -403.92,
+                    -2.34,
+                    17.735
                 ]
             }
         },
@@ -41,8 +43,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    127.519531,
-                    -87.070312
+                    1400.12,
+                    -291.02,
+                    20.135
                 ]
             }
         },
@@ -55,8 +58,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    114.707032,
-                    -93.796875
+                    1003.24,
+                    -502.44,
+                    15.26
                 ]
             }
         },
@@ -69,8 +73,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    111.207031,
-                    -77.980469
+                    890.46,
+                    -5.09,
+                    27.54
                 ]
             }
         },
@@ -83,8 +88,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    117.792969,
-                    -62.175781
+                    1101.4,
+                    490.52,
+                    31.745
                 ]
             }
         },
@@ -97,8 +103,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    136.960938,
-                    -58.699218
+                    1699.7,
+                    600.06,
+                    28.51
                 ]
             }
         },
@@ -111,8 +118,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    147.136719,
-                    -74.488281
+                    2002,
+                    96.88,
+                    15.475
                 ]
             }
         },
@@ -125,8 +133,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    130.343751,
-                    -68.675781
+                    1497,
+                    285.24,
+                    25.51
                 ]
             }
         },
@@ -139,8 +148,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    114.824219,
-                    -52.308593
+                    1012.94,
+                    798.28,
+                    31.82
                 ]
             }
         },
@@ -153,8 +163,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    55.019531,
-                    -36.039062
+                    -866.62,
+                    1306.12,
+                    21.27
                 ]
             }
         },
@@ -167,8 +178,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    159.15625,
-                    -58.515625
+                    2387,
+                    603,
+                    4.815
                 ]
             }
         },
@@ -181,8 +193,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.09375,
-                    -49.03125
+                    1799.74,
+                    900,
+                    15.48
                 ]
             }
         },
@@ -195,8 +208,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    124.480469,
-                    -74.949219
+                    1309,
+                    87,
+                    34.13
                 ]
             }
         },
@@ -209,8 +223,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    98.4375,
-                    -14.132812
+                    500,
+                    2003.5,
+                    20.893
                 ]
             }
         },
@@ -223,8 +238,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    107.972656,
-                    -20.328124
+                    792.14,
+                    1799.02,
+                    36.557
                 ]
             }
         },
@@ -237,8 +253,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    95.523438,
-                    -32.96875
+                    391,
+                    1397,
+                    8.54
                 ]
             }
         },
@@ -251,8 +268,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    102.332032,
-                    -27.054688
+                    615,
+                    1588.06,
+                    26.2
                 ]
             }
         },
@@ -265,8 +283,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    124.417969,
-                    -23.738281
+                    1308,
+                    1692,
+                    17.4
                 ]
             }
         },
@@ -279,8 +298,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    121.609375,
-                    -13.070312
+                    1218.5,
+                    2009.68,
+                    12.865
                 ]
             }
         },
@@ -293,8 +313,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    96.816406,
-                    -20.1875
+                    443.24,
+                    1805.42,
+                    25
                 ]
             }
         },
@@ -307,8 +328,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    18.84375,
-                    -77.582031
+                    -2001.78,
+                    6.4,
+                    9.53
                 ]
             }
         },
@@ -321,8 +343,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    76.617188,
-                    -32.707031
+                    -190,
+                    1412,
+                    19.5
                 ]
             }
         },
@@ -335,8 +358,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    73.0625,
-                    -45.78125
+                    -299.12,
+                    1002.94,
+                    11.33
                 ]
             }
         },
@@ -349,8 +373,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    41.128906,
-                    -52.105469
+                    -1301.1,
+                    803.3,
+                    24.79
                 ]
             }
         },
@@ -363,8 +388,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    37.964844,
-                    -39.347656
+                    -1401.02,
+                    1201,
+                    27.5
                 ]
             }
         },
@@ -377,8 +403,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    31.648438,
-                    -48.703125
+                    -1597.82,
+                    900,
+                    26.02
                 ]
             }
         },
@@ -391,8 +418,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    69.851563,
-                    -61.964844
+                    -402,
+                    498,
+                    12.785
                 ]
             }
         },
@@ -405,8 +433,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    44.535157,
-                    -58.652343
+                    -1197.06,
+                    600.28,
+                    7.01
                 ]
             }
         },
@@ -419,8 +448,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    79.316407,
-                    -55.535156
+                    -103.58,
+                    700.34,
+                    11.855
                 ]
             }
         },
@@ -433,8 +463,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    25.101563,
-                    -64.906249
+                    -1800,
+                    400,
+                    24.355
                 ]
             }
         },
@@ -447,8 +478,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    86.296875,
-                    -72.140625
+                    111.94,
+                    189.62,
+                    13.893
                 ]
             }
         },
@@ -461,8 +493,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    100.484376,
-                    -53.664062
+                    548,
+                    763,
+                    20.955
                 ]
             }
         },
@@ -475,8 +508,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    85.964844,
-                    -87.410156
+                    101.6,
+                    -299.76,
+                    17.175
                 ]
             }
         },
@@ -489,8 +523,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    72.902344,
-                    -71.261719
+                    -303,
+                    203.94,
+                    13.75
                 ]
             }
         },
@@ -503,8 +538,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    35.855469,
-                    -71.800781
+                    -1470,
+                    187.42,
+                    9.195
                 ]
             }
         },
@@ -517,8 +553,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    65.984376,
-                    -54.921875
+                    -527,
+                    717,
+                    8.68
                 ]
             }
         },
@@ -531,8 +568,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    73.179688,
-                    -26.808593
+                    -300,
+                    1599,
+                    19.43
                 ]
             }
         },
@@ -545,8 +583,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    64.789063,
-                    -39.292969
+                    -560.64,
+                    1205.8,
+                    17.34
                 ]
             }
         },
@@ -559,8 +598,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    72.984375,
-                    -84.390625
+                    -305.4,
+                    -202.4,
+                    13.945
                 ]
             }
         },
@@ -573,8 +613,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    44.59375,
-                    -87.148437
+                    -1190,
+                    -295,
+                    2.06
                 ]
             }
         },
@@ -587,8 +628,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    34.910156,
-                    -30.386719
+                    -1492.42,
+                    1503,
+                    12.64
                 ]
             }
         },
@@ -601,8 +643,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    80.421875,
-                    -96.53125
+                    -76,
+                    -584,
+                    13.76
                 ]
             }
         },
@@ -615,8 +658,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    31.527344,
-                    -94.734375
+                    -1586,
+                    -518.605,
+                    9.26
                 ]
             }
         },
@@ -629,8 +673,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    98.210938,
-                    -77.277343
+                    488,
+                    16.06,
+                    14.96
                 ]
             }
         },
@@ -643,8 +688,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    22.039063,
-                    -87.296875
+                    -1900,
+                    -297.74,
+                    10.04
                 ]
             }
         },
@@ -657,8 +703,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    51.164063,
-                    -20.535156
+                    -987.88,
+                    1800.04,
+                    20.46
                 ]
             }
         },
@@ -671,8 +718,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    50.601563,
-                    -46.167969
+                    -996.74,
+                    996.36,
+                    23.475
                 ]
             }
         },
@@ -685,8 +733,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    37.933594,
-                    -62.363281
+                    -1403,
+                    486,
+                    14.53
                 ]
             }
         },
@@ -699,8 +748,9 @@ var seagulls_tlad = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    31.328125,
-                    -56.445312
+                    -1610.44,
+                    668.7199,
+                    25.63
                 ]
             }
         }

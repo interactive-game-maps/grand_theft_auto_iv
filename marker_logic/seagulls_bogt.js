@@ -9,6 +9,9 @@ function addSeagullsBogt(map) {
                 icon: Utils.getCustomIcon('fa-crow'),
                 riseOnHover: true
             });
+        },
+        coordsToLatLng: function (coords) {
+            return gtaCoordinatesToLeaflet(coords);
         }
     });
 }

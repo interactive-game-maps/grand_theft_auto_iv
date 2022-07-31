@@ -12,8 +12,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    60,
-                    -40.4375
+                    -709.54,
+                    1167.26,
+                    8.38
                 ]
             }
         },
@@ -25,8 +26,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    106.5,
-                    -57.75
+                    747.3,
+                    623.1,
+                    15.4
                 ]
             }
         },
@@ -38,8 +40,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    93.6875,
-                    -45.4375
+                    340,
+                    1000,
+                    11
                 ]
             }
         },
@@ -51,8 +54,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    85.96875,
-                    -23.390625
+                    100,
+                    1700,
+                    27
                 ]
             }
         },
@@ -64,8 +68,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    87.625,
-                    -25.453125
+                    160,
+                    1650,
+                    24
                 ]
             }
         },
@@ -77,8 +82,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    100.234375,
-                    -40.671875
+                    552.17,
+                    1170.84,
+                    9
                 ]
             }
         },
@@ -90,8 +96,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    127.84375,
-                    -35.4375
+                    1404.55,
+                    1278,
+                    4.26
                 ]
             }
         },
@@ -103,8 +110,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    97.84375,
-                    -69.5
+                    514.54,
+                    260.1,
+                    17.17
                 ]
             }
         },
@@ -116,8 +124,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    94.3125,
-                    -79.34375
+                    377.74,
+                    -51.47,
+                    5.73
                 ]
             }
         },
@@ -129,8 +138,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    101.3125,
-                    -90.8125
+                    567.79,
+                    -406.97,
+                    18.97
                 ]
             }
         },
@@ -142,8 +152,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    37.25,
-                    -82.78125
+                    -1423.04,
+                    -154.41,
+                    25.02
                 ]
             }
         },
@@ -155,8 +166,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    34.21875,
-                    -82.75
+                    -1517.06,
+                    -154.07,
+                    4.21
                 ]
             }
         },
@@ -168,8 +180,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    26.78125,
-                    -82.28125
+                    -1750.1,
+                    -126.69,
+                    7
                 ]
             }
         },
@@ -181,8 +194,9 @@ var under_bridges = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    23.40625,
-                    -82.96875
+                    -1860,
+                    -150,
+                    48
                 ]
             }
         }

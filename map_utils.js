@@ -55,3 +55,14 @@ function getPopupMedia(feature, list_id) {
 
     return html;
 }
+
+/**
+ * Convert ingame coordinates into L.LatLng
+ * @param {Array} coords Array of coordinates [x, y(, z)]
+ * @returns L.LatLng
+ */
+function gtaCoordinatesToLeaflet(coords) {
+    var lx = (coords[0] + 2571) * 0.0321;
+    var ly = (coords[1] - 2441) * 0.03187;
+    return L.latLng(ly, lx);
+}
