@@ -8,7 +8,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "1",
-                "video_id": "_rwNuSVKvkk"
+                "video_id": "ulK868g4R-c?start=632&end=642"
             },
             "geometry": {
                 "type": "Point",
@@ -23,7 +23,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "2",
-                "video_id": "uXicSqBwtGM"
+                "video_id": "ulK868g4R-c?start=835&end=845"
             },
             "geometry": {
                 "type": "Point",
@@ -38,7 +38,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "3",
-                "video_id": "nVTKlO3MBRA"
+                "video_id": "ulK868g4R-c?start=1453&end=1470"
             },
             "geometry": {
                 "type": "Point",
@@ -53,7 +53,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "4",
-                "video_id": "m5MM2kORmsU"
+                "video_id": "ulK868g4R-c?start=1365&end=1381"
             },
             "geometry": {
                 "type": "Point",
@@ -68,7 +68,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "5",
-                "video_id": "Waap9Dbkhk4"
+                "video_id": "ulK868g4R-c?start=904&end=914"
             },
             "geometry": {
                 "type": "Point",
@@ -83,7 +83,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "6",
-                "video_id": "72LzsT99edk"
+                "video_id": "ulK868g4R-c?start=582&end=592"
             },
             "geometry": {
                 "type": "Point",
@@ -98,7 +98,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "7",
-                "video_id": "LGimf3DsivY"
+                "video_id": "ulK868g4R-c?start=1756&end=1769"
             },
             "geometry": {
                 "type": "Point",
@@ -113,7 +113,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "8",
-                "video_id": "PFogwoYt8pQ"
+                "video_id": "ulK868g4R-c?start=2214&end=2225"
             },
             "geometry": {
                 "type": "Point",
@@ -128,7 +128,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "9",
-                "video_id": "s1LL5UX4vGc"
+                "video_id": "ulK868g4R-c?start=2027&end=2037"
             },
             "geometry": {
                 "type": "Point",
@@ -143,7 +143,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "10",
-                "video_id": "sQOCf3Kcpk4"
+                "video_id": "ulK868g4R-c?start=1688&end=1700"
             },
             "geometry": {
                 "type": "Point",
@@ -158,7 +158,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "11",
-                "video_id": "htr8digZmX0"
+                "video_id": "ulK868g4R-c?start=1659&end=1669"
             },
             "geometry": {
                 "type": "Point",
@@ -173,7 +173,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "12",
-                "video_id": "A4C05hDleBI"
+                "video_id": "ulK868g4R-c?start=564&end=574"
             },
             "geometry": {
                 "type": "Point",
@@ -188,7 +188,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "13",
-                "video_id": "WOXXlSOp63w"
+                "video_id": "ulK868g4R-c?start=603&end=620"
             },
             "geometry": {
                 "type": "Point",
@@ -203,7 +203,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "14",
-                "video_id": "YXAmzC2bZeA"
+                "video_id": "ulK868g4R-c?start=658&end=665"
             },
             "geometry": {
                 "type": "Point",
@@ -218,7 +218,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "15",
-                "video_id": "Aidka5JO44o"
+                "video_id": "ulK868g4R-c?start=665&end=671"
             },
             "geometry": {
                 "type": "Point",
@@ -233,7 +233,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "16",
-                "video_id": "bi4wjMvMVuE"
+                "video_id": "ulK868g4R-c?start=958&end=992"
             },
             "geometry": {
                 "type": "Point",
@@ -248,7 +248,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "17",
-                "video_id": "SJOYGrmxvlc"
+                "video_id": "ulK868g4R-c?start=1731&end=1744"
             },
             "geometry": {
                 "type": "Point",
@@ -263,7 +263,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "18",
-                "video_id": "UcAccD5NtzU"
+                "video_id": "ulK868g4R-c?start=340&end=355"
             },
             "geometry": {
                 "type": "Point",
@@ -278,7 +278,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "19",
-                "video_id": "w0D0xHO6n2c"
+                "video_id": "ulK868g4R-c?start=1111&end=1121"
             },
             "geometry": {
                 "type": "Point",
@@ -293,7 +293,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "20",
-                "video_id": "whCeBff83gk"
+                "video_id": "ulK868g4R-c?start=1712&end=1722"
             },
             "geometry": {
                 "type": "Point",
@@ -308,7 +308,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "21",
-                "video_id": "1EHnY1a5FzE"
+                "video_id": "ulK868g4R-c?start=1378&end=1390"
             },
             "geometry": {
                 "type": "Point",
@@ -323,7 +323,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "22",
-                "video_id": "e7oOUNJmS68"
+                "video_id": "ulK868g4R-c?start=881&end=891"
             },
             "geometry": {
                 "type": "Point",
@@ -338,7 +338,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "23",
-                "video_id": "ks0hFhM9zd0"
+                "video_id": "ulK868g4R-c?start=2327&end=2340"
             },
             "geometry": {
                 "type": "Point",
@@ -353,7 +353,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "24",
-                "video_id": "aPzyEu4PnYA"
+                "video_id": "ulK868g4R-c?start=1844&end=1854"
             },
             "geometry": {
                 "type": "Point",
@@ -368,7 +368,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "25",
-                "video_id": "UjzHki5YLjE"
+                "video_id": "ulK868g4R-c?start=2098&end=2119"
             },
             "geometry": {
                 "type": "Point",
@@ -383,7 +383,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "26",
-                "video_id": "kiTxTSiB7mI"
+                "video_id": "ulK868g4R-c?start=930&end=940"
             },
             "geometry": {
                 "type": "Point",
@@ -398,7 +398,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "27",
-                "video_id": "BRmLbv6nkqU"
+                "video_id": "ulK868g4R-c?start=1903&end=1913"
             },
             "geometry": {
                 "type": "Point",
@@ -413,7 +413,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "28",
-                "video_id": "wVHDc7V77Z8"
+                "video_id": "ulK868g4R-c?start=1780&end=1790"
             },
             "geometry": {
                 "type": "Point",
@@ -428,7 +428,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "29",
-                "video_id": "PHupBR0oy2M"
+                "video_id": "ulK868g4R-c?start=461&end=471"
             },
             "geometry": {
                 "type": "Point",
@@ -443,7 +443,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "30",
-                "video_id": "wQ_HzRfXnrE"
+                "video_id": "ulK868g4R-c?start=516&end=526"
             },
             "geometry": {
                 "type": "Point",
@@ -458,7 +458,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "31",
-                "video_id": "rPfj5he2b40"
+                "video_id": "ulK868g4R-c?start=1165&end=1175"
             },
             "geometry": {
                 "type": "Point",
@@ -473,7 +473,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "32",
-                "video_id": "C9qytIG6aDg"
+                "video_id": "ulK868g4R-c?start=2067&end=2077"
             },
             "geometry": {
                 "type": "Point",
@@ -488,7 +488,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "33",
-                "video_id": "5clL4osRcxo",
+                "video_id": "ulK868g4R-c?start=186&end=200",
                 "description": "Boat required"
             },
             "geometry": {
@@ -504,7 +504,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "34",
-                "video_id": "lViA849djnA"
+                "video_id": "ulK868g4R-c?start=1040&end=1050"
             },
             "geometry": {
                 "type": "Point",
@@ -519,7 +519,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "35",
-                "video_id": "UAHO16WhXEQ"
+                "video_id": "ulK868g4R-c?start=687&end=700"
             },
             "geometry": {
                 "type": "Point",
@@ -534,7 +534,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "36",
-                "video_id": "JHqH0dLUwKI"
+                "video_id": "ulK868g4R-c?start=783&end=793"
             },
             "geometry": {
                 "type": "Point",
@@ -549,7 +549,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "37",
-                "video_id": "bsvJUlb5ZQs"
+                "video_id": "ulK868g4R-c?start=1873&end=1883"
             },
             "geometry": {
                 "type": "Point",
@@ -564,7 +564,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "38",
-                "video_id": "MQRtDjLULCI"
+                "video_id": "ulK868g4R-c?start=1136&end=1146"
             },
             "geometry": {
                 "type": "Point",
@@ -579,7 +579,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "39",
-                "video_id": "bvnd9ilaIfI"
+                "video_id": "ulK868g4R-c?start=1070&end=1080"
             },
             "geometry": {
                 "type": "Point",
@@ -594,7 +594,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "40",
-                "video_id": "uxzsAmTzc4w"
+                "video_id": "ulK868g4R-c?start=2177&end=2184"
             },
             "geometry": {
                 "type": "Point",
@@ -609,7 +609,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "41",
-                "video_id": "tfLrju2FQYc"
+                "video_id": "ulK868g4R-c?start=818&end=828"
             },
             "geometry": {
                 "type": "Point",
@@ -624,7 +624,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "42",
-                "video_id": "GFNXHGMhYpU"
+                "video_id": "ulK868g4R-c?start=1221&end=1231"
             },
             "geometry": {
                 "type": "Point",
@@ -639,7 +639,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "43",
-                "video_id": "suUBiAibTtU"
+                "video_id": "ulK868g4R-c?start=310&end=325"
             },
             "geometry": {
                 "type": "Point",
@@ -654,7 +654,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "44",
-                "video_id": "HDKx4gN9QhE",
+                "video_id": "ulK868g4R-c?start=232&end=247",
                 "description": "Boat required"
             },
             "geometry": {
@@ -670,7 +670,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "45",
-                "video_id": "zOOKMydHHeo"
+                "video_id": "ulK868g4R-c?start=1947&end=1957"
             },
             "geometry": {
                 "type": "Point",
@@ -685,7 +685,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "46",
-                "video_id": "C99CEaOvySE"
+                "video_id": "ulK868g4R-c?start=546&end=556"
             },
             "geometry": {
                 "type": "Point",
@@ -700,7 +700,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "47",
-                "video_id": "7RqR6dgYdM4"
+                "video_id": "ulK868g4R-c?start=1977&end=1990"
             },
             "geometry": {
                 "type": "Point",
@@ -715,7 +715,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "48",
-                "video_id": "4rQ753F2j9s",
+                "video_id": "ulK868g4R-c?start=728&end=770",
                 "description": "Needs a bike - drive up the stairs inside the police station to the roof."
             },
             "geometry": {
@@ -731,7 +731,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "49",
-                "video_id": "rPxMRxcOrRQ"
+                "video_id": "ulK868g4R-c?start=436&end=446"
             },
             "geometry": {
                 "type": "Point",
@@ -746,7 +746,7 @@ var stunt_jumps = {
             "type": "Feature",
             "properties": {
                 "id": "50",
-                "video_id": "TGk6WIOVhMs"
+                "video_id": "ulK868g4R-c?start=1420&end=1432"
             },
             "geometry": {
                 "type": "Point",

@@ -45,7 +45,7 @@ function getPopupMedia(feature, list_id) {
         video.className = 'popup-media';
         video.width = POPUP_WIDTH_16_9;
         video.height = POPUP_WIDTH_16_9 / 16 * 9;
-        video.src = `https://www.youtube-nocookie.com/embed/${feature.properties.video_id}`;
+        video.src = `https://www.youtube-nocookie.com/embed/${feature.properties.video_id}&mute=1`;
         video.title = 'YouTube video player';
         video.frameborder = 0;
         // video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen'
